@@ -8,8 +8,8 @@
 
 <div class="page">
 
-	<div class=”oe_structure” />
-	<div class=”text-center”>
+	<div class="oe_structure" />
+	<div class="text-center">
 	<br></br>
 <h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
 <br></br>
@@ -108,7 +108,7 @@
 			<tr class="border-black o_amount_total">
                                         <td><strong>Total Baht Incl. VAT</strong></td>
                                         <td class="text-right">
-                                            <span t-field="o.amount_total”/>
+                                            <span t-field="o.amount_total"/>
                                         </td>
                                     </tr>
 
