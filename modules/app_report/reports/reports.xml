@@ -25,11 +25,11 @@ file="account.report_taxinvoice"/>
 	<field name="header_line" eval="False" />
 	<field name="header_spacing">3</field>
 	<field name="dpi"></field>
-	</record>
+</record>
 
-	<!-- binding paper format with qweb report -->
-	<record id="account.report_tax_invoice" model="ir.actions.report.xml"?
-		<field name="paper_format_tax_invoice" ref="account.paper_format_tax_invoice" />
-	</record>
+<!-- binding paper format with qweb report -->
+<record id="account.report_tax_invoice" model="ir.actions.report.xml">
+	<field name="paper_format_tax_invoice" ref="account.paper_format_tax_invoice" />
+</record>
 
 </odoo>
