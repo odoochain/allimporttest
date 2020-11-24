@@ -18,9 +18,10 @@ file="account.report_taxinvoice"/>
 				<div class="page">
 					<div class="oe_structure" />
 					<div class="text-center">
-					<br></br>
-					<h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
-					<br></br>
+						<br></br>
+						<h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
+						<br></br>
+					</div>
 				</div>
 
 				<div class="page">
