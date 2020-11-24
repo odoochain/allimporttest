@@ -4,7 +4,7 @@
 <!-- Add the report to the XML file responsible for reports -->
 <report
 id="report_tax_invoice"
-String="Tax Invoice"
+string="Tax Invoice"
 model="account.invoice"
 report_type="qweb-pdf"
 name="accounting.report_taxinvoice"
