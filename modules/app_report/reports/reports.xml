@@ -9,9 +9,7 @@ model="account.invoice"
 report_type="qweb-pdf"
 name="accounting.report_taxinvoice"
 file="account.report_taxinvoice"
- 
- 
-<!-- setting paper format for report -->
+
  
 <record id=”paper_format_tax_invoice” model=”report.paperformat”>
 	<field name=”name>Tax Invoice</field>
