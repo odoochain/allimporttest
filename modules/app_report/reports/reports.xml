@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Odoo>
+<odoo>
  
 <!-- Add the report to the XML file responsible for reports -->
 <report
@@ -31,5 +31,4 @@ file="account.report_taxinvoice"/>
 <record id="account.report_tax_invoice" model="ir.actions.report.xml">
 	<field name="paper_format_tax_invoice" ref="account.paper_format_tax_invoice" />
 </record>
-
 </odoo>
