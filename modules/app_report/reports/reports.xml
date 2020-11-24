@@ -11,12 +11,12 @@ name="accounting.report_taxinvoice"
 file="account.report_taxinvoice"/>
 
  
-<record id="paper_format_tax_invoice" model="report.paperformat">
+<record id="paperformat_tax_invoice" model="report.paperformat">
 	<field name="name">Tax Invoice</field>
-	<field name="default" eval="True" />
-	<field name="format">A4</field>
-	<field name="page_height">0</field>
-	<field name="page_width">0</field>
+	<field name="default" eval="True"/>
+	<field name="format">custom</field>
+	<field name="page_height">80</field>
+	<field name="page_width">175</field>
 	<field name="orientation">Portrait</field>
  	<field name="margin_top">10</field>
  	<field name="margin_bottom">10</field>
@@ -29,6 +29,6 @@ file="account.report_taxinvoice"/>
 
 <!-- binding paper format with qweb report -->
 <record id="account.report_tax_invoice" model="ir.actions.report.xml">
-	<field name="paper_format_tax_invoice" ref="account.paper_format_tax_invoice" />
+	<field name="paperformat_tax_invoice" ref="account.paperformat_tax_invoice" />
 </record>
 </odoo>
