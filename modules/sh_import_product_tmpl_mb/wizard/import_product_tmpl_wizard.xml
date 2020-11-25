@@ -36,7 +36,7 @@
         <field name="name">Import Product Templates</field>
         <field name="res_model">import.product.tmpl.mb.wizard</field>
         <field name="view_mode">form</field>
-        <field name="view_id" ref="sh_import_product_tmpl_mb_wizard" />
+        <field name="view_id" ref="sh_import_product_tmpl_mb_wizard"/>
         <field name="target">new</field>
     </record>
 </odoo>
