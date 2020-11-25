@@ -8,7 +8,7 @@
        model="account.invoice"
        report_type="qweb-pdf"
        name="accounting.report_taxinvoice"
-       file="account.report_taxinvoice"
+       #file="account.report_taxinvoice"
 	   paperformat="accounting.paper_format_tax_invoice"/>
 
 	<!--setting paper format for report-->
