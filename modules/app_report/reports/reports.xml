@@ -5,7 +5,7 @@
 <report
        id="report_tax_invoice"
        String="Tax Invoice"
-       model="account.move"
+       model="account.invoice"
        report_type="qweb-pdf"
        name="account.report_taxinvoice"/>
 </odoo>
