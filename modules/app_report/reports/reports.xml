@@ -8,7 +8,7 @@
        model="account.move"
        report_type="qweb-pdf"
        name="account.report_taxinvoice"
-       file="account.report_taxinvoice"/>
+       />
 	   
 
 
