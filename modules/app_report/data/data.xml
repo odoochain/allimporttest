@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="paperformat_tax_invoice" model="report.paperformat">
+    <record id="paper_format_tax_invoice" model="report.paperformat">
         <field name="name">Tax Invoice</field>
         <field name="default" eval="True"/>
         <field name="format">custom</field>
@@ -18,6 +18,6 @@
 
     <!-- binding paper format with qweb report -->
 	<record id="account.report_tax_invoice" model="ir.actions.report.xml">
-		<field name="paperformat_tax_invoice" ref="account.paper_format_tax_invoice" />
+		<field name="paper_format_tax_invoice" ref="account.paper_format_tax_invoice" />
 	</record>
 </odoo>
