@@ -7,11 +7,5 @@
        String="Tax Invoice"
        model="account.move"
        report_type="qweb-pdf"
-       name="account.report_taxinvoice"
-       />
-	   
-
-
-	
-	
- </odoo>
+       name="account.report_taxinvoice"/>
+</odoo>
