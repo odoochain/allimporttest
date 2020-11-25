@@ -5,10 +5,10 @@
 <report
        id="report_tax_invoice"
        String="Tax Invoice"
-       model="account.invoice"
+       model="account.move"
        report_type="qweb-pdf"
        name="accounting.report_taxinvoice"
-       file="account.report_taxinvoice"/>
+       file="accounting.report_taxinvoice"/>
 	   
 
 
