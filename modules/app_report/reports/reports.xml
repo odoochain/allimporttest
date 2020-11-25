@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Odoo>
+<odoo>
  
 <!-- Add the report to the XML file responsible for reports -->
 <report
