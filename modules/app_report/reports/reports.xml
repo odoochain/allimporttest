@@ -1,130 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<Odoo>
  
 <!-- Add the report to the XML file responsible for reports -->
 <report
 id="report_tax_invoice"
-string="Tax Invoice"
+String="Tax Invoice"
 model="account.invoice"
 report_type="qweb-pdf"
 name="accounting.report_taxinvoice"
-paperformat="paperformat_tax_invoice"
-file="account.report_taxinvoice"/>
+file="account.report_taxinvoice"
+ 
+ 
+<!-- setting paper format for report -->
+ 
+<record id=”paper_format_tax_invoice” model=”report.paperformat”>
+	<field name=”name>Tax Invoice</field>
+	<field name=”default” eval=”True” />
+	<field name=”format”>A4</field>
+	<field name=”page_height”>0</field>
+	<field name=”page_width”>0</field>
+	<field name=”orientation”>Portrait</field>
+ 	<field name=”margin_top”>10</field>
+ 	<field name=”margin_bottom”>10</field>
+	<field name=”margin_left”>5</field>
+	<field name=”margin_right”>5</field>
+	<field name=”header_line” eval=”False” />
+	<field name=”header_spacing”>3</field>
+	<field name=”dpi”></field>
+	</record>
 
-<template id="report_tax_invoice">
-	<t t-call="web.html_container">
-		<t t-foreach="docs" t-as="o">
-			<t t-call="web.external_layout">
-				<div class="page">
-					<div class="oe_structure"/>
-					<div class="text-center">
-						<br></br>
-						<h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
-						<br></br>
-					</div>
-				</div>
+	<!-- binding paper format with qweb report -->
+	<record id=”account.report_tax_invoice” model=”ir.actions.report.xml”?
+		<field name=”paper_format_tax_invoice” ref=”account.paper_format_tax_invoice” />
+	</record>
 
-				<div class="page">
-					<div class="page">
-								<div class="row mt32 mb32">
-									<div class="col-xs-6">
-										<strong>Name / Address</strong> <t t-call="doc.partner_id"/>
-									</div>
-
-									<div class="col-xs-6">
-										<strong>Invoice No:</strong> <t t-call="doc.number"/>
-									</div>
-								</div>
-					</div>
-
-					<div class="page">
-								<div class="row mt32 mb32">
-									<div class="col-xs-6">
-										<strong>Tax ID No.</strong> <t t-call="doc.vat"/>
-									</div>
-
-									<div class="col-xs-6">
-										<strong>Invoice Date:</strong> <t t-call="doc.date_invoice"/>
-									</div>
-						</div>
-					</div>
-
-
-					<div class = "page">
-						<div style="border: 1px solid black;">
-							<table border="1" class="table table-condensed" style="border-style:solid">
-								<thead>
-										<tr>
-											<th style="border: 1px solid black" class="text-center">No. </th>
-												<th style="border: 1px solid black" class="text-center">Item No. </th>
-												<th style="border: 1px solid black" class="text-center">Description </th>
-												<th style="border: 1px solid black" class="text-center">Quantity</th>
-												<th style="border: 1px solid black" class="text-center">Unit Price </th>
-												<th style="border: 1px solid black" class="text-center">Amount </th>
-										</tr>
-								</thead>	
-							<tbody>
-								<tr t-foreach="o.insp_rslt" t-as="line">
-									<td style="border: 1px solid black"><span t-field="        	"/></td>
-									<td style="border: 1px solid black"><span t-field="o.product_id"/></td>
-									<td style="border: 1px solid black"><span t-field="o.name"/></td>
-									<td style="border: 1px solid black"><span t-field="o.quantity"/></td>
-									<td style="border: 1px solid black"><span t-field="o.price_unit"/></td>
-									<td style="border: 1px solid black"><span t-field="price_subtotal"/></td>
-								</tr>
-							</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix">
-					<div id="total" class="row">
-						<div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
-							<table class="table table-sm">
-								<tr class="border-black o_price_subtotal" style="">
-									<td><strong>Grand Total</strong></td>
-									<td class="text-right">
-										<span t-field="o.price_subtotal"/>
-									</td>
-								</tr>     
-								<tr class="border-black o_">
-								<td><strong>Discount</strong></td>
-								<td class="text-right">
-									<span t-field="o.discount"/>
-								</td>
-								</tr>
-								<tr class="border-black o_discount_subtotal">
-									<td><strong>Total Baht Excl. VAT</strong></td>
-									<td class="text-right">
-										<span t-field="o.price_subtotal - o.discount"/>
-									</td>
-								</tr>
-
-								<tr class="border-black o_amount_tax">
-									<td><strong>VAT 7%</strong></td>
-									<td class="text-right">
-										<span t-field="o.amount_tax"/>
-									</td>
-								</tr>
-
-								<tr class="border-black o_amount_total">
-									<td><strong>Total Baht Incl. VAT</strong></td>
-									<td class="text-right">
-										<span t-field="o.amount_total"/>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-			</t>
-		</t>
-	</t>
-</template>
-
-
-<!-- binding paper format with qweb report -->
-<record id="account.report_tax_invoice" model="ir.actions.report.xml">
-	<field name="paperformat_tax_invoice" ref="account.paperformat_tax_invoice" />
-</record>
 </odoo>
