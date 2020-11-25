@@ -9,7 +9,7 @@
        report_type="qweb-pdf"
        name="accounting.report_taxinvoice"
 	   file="accounting.report_taxinvoice"
-	   paperformat="accounting.paperformat_tax_invoice"/>
+	   paperformat="paperformat_tax_invoice"/>
 
 	   <!--setting paper format for report-->
     <record id="paper_format_tax_invoice" model="report.paperformat">
