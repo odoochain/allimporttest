@@ -8,6 +8,6 @@
        string="Tax Invoice"
        report_type="qweb-pdf"
        name="accounting.report_taxinvoice"
-	   file="accounting.report_taxinvoice"
+	   file="accounting.report_taxinvoice"/>
 	   
 </odoo>
