@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="paper_format_tax_invoice" model="report.paperformat">
+    <record id="paperformat_tax_invoice" model="report.paperformat">
         <field name="name">Tax Invoice</field>
         <field name="default" eval="True"/>
         <field name="format">custom</field>
