@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Odoo>
+<odoo>
  
 <template id="report_tax_invoice"
  <t t-call="web.html_container">
@@ -8,8 +8,8 @@
 
 <div class="page">
 
-	<div class=”oe_structure” />
-	<div class=”text-center”>
+	<div class="oe_structure" />
+	<div class="text-center">
 	<br></br>
 <h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
 <br></br>
@@ -94,21 +94,21 @@
 			<tr class="border-black o_discount_subtotal">
                                         <td><strong>Total Baht Excl. VAT</strong></td>
                                         <td class="text-right">
-                                            <span t-field="o.price_subtotal - o.discount“/>
+                                            <span t-field="o.price_subtotal - o.discount"/>
                                         </td>
                                     </tr>
 
 			<tr class="border-black o_amount_tax">
-                                        <td><strong>VAT 7%</strong></td>
-                                        <td class="text-right">
-                                            <span t-field="o.amount_tax"/>
-                                        </td>
-                                    </tr>
+									<td><strong>VAT 7%</strong></td>
+									<td class="text-right">
+										<span t-field="o.amount_tax"/>
+									</td>
+								</tr>
 
 			<tr class="border-black o_amount_total">
                                         <td><strong>Total Baht Incl. VAT</strong></td>
                                         <td class="text-right">
-                                            <span t-field="o.amount_total”/>
+                                            <span t-field="o.amount_total"/>
                                         </td>
                                     </tr>
 
