@@ -9,7 +9,7 @@
        report_type="qweb-pdf"
        name="accounting.report_taxinvoice"
        file="accounting.report_taxinvoice"
-	   paperformat="accounting.paper_format_tax_invoice"/>
+	   paperformat="accounting.paper_format_tax_invoice">
 
 	<!--setting paper format for report-->
     <record id="paper_format_tax_invoice" model="report.paperformat">
@@ -32,4 +32,5 @@
 	<record id="account.report_tax_invoice" model="ir.actions.report.xml">
 		<field name="paper_format_tax_invoice" ref="account.paper_format_tax_invoice" />
 	</record>
+	</report>
  </odoo>
