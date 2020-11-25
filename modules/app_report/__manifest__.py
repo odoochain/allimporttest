@@ -9,7 +9,7 @@
     ],    
     'data': [
         'reports/reports.xml',
-        'data/data.xml',
+        'reports/data.xml',
         #'reports/tax_invoice.xml'
     ],
     'installable': True,
