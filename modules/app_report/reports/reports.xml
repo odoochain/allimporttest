@@ -16,7 +16,7 @@ file="account.report_taxinvoice"/>
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
 				<div class="page">
-					<div class="oe_structure" />
+					<div class="oe_structure"/>
 					<div class="text-center">
 						<br></br>
 						<h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
