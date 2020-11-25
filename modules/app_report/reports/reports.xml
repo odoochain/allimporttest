@@ -4,8 +4,11 @@
 <!-- Add the report to the XML file responsible for reports -->
 <report
        id="report_tax_invoice"
-       String="Tax Invoice"
-       model="account.invoice"
+	   model="account.invoice"
+       string="Tax Invoice"
        report_type="qweb-pdf"
-       name="accounting.report_tax_invoice"/>
+       name="accounting.report_taxinvoice"
+	   file="accounting.report_taxinvoice"
+	   paperformat="paperformat_tax_invoice"
+	   />
 </odoo>
