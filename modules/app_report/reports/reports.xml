@@ -122,5 +122,10 @@
 	</t>
 </template>
 
+<!-- binding paper format with qweb report -->
+	<record id="account.report_tax_invoice" model="ir.actions.report.xml">
+		<field name="paper_format_tax_invoice" ref="account.paper_format_tax_invoice" />
+	</record>
+
 	   
 </odoo>
