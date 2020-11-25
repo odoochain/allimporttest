@@ -8,9 +8,9 @@
         'sale_management'
     ],    
     'data': [
-        'reports/reports.xml',
         #'data/data.xml',
-        'reports/tax_invoice.xml'
+        'reports/tax_invoice.xml',
+        'reports/reports.xml'
     ],
     'installable': True,
     'application':True,
