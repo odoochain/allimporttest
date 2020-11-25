@@ -7,8 +7,8 @@
        String="Tax Invoice"
        model="account.move"
        report_type="qweb-pdf"
-       name="account.report_tax_invoice"
-       file="account.report_tax_invoice"/>
+       name="account.report_taxinvoice"
+       file="account.report_taxinvoice"/>
 	   
 
 
