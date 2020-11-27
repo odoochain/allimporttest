@@ -9,7 +9,7 @@
 					<div class="oe_structure" />
 					<div class="text-center">
 						<br></br>
-						<h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
+						<h4>TAX INVOICE / OFFICIAL RECEIPT</h4>
 						<br></br>
 					</div>
 				</div>
@@ -18,7 +18,7 @@
 					<div class="page">
 								<div class="row mt32 mb32">
 									<div class="col-xs-6">
-										<strong>Name / Address</strong> <t t-esc="o.partner_shipping_id"/>
+										<strong>Name / Address</strong> <t t-esc="o.partner_id"/>
 									</div>
 									<!--
                                     <div class="col-xs-6">
@@ -47,7 +47,7 @@
 								<thead>
 										<tr>
 											    <!--<th style="border: 1px solid black" class="text-center">No. </th>-->
-												<th style="border: 1px solid black" class="text-center">Item No. </th>
+												<th style="border: 1px solid black" class="text-center">Product </th>
 												<th style="border: 1px solid black" class="text-center">Description </th>
 												<th style="border: 1px solid black" class="text-center">Quantity</th>
 												<th style="border: 1px solid black" class="text-center">Unit Price </th>
