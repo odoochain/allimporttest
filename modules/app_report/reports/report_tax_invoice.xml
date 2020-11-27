@@ -10,7 +10,7 @@
 					<div class="text-center">
 						<br></br>
 						<p style="text-align:center;">
-						<img t-att-src="'/static/descriiption/crea-icon.jpg'"/>
+						<img t-att-src="'app_report/static/description/crea-icon.jpg'"/>
 						</p>
 						<h4>TAX INVOICE / OFFICIAL RECEIPT</h4>
 						<br></br>
