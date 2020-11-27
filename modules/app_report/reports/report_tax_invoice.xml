@@ -55,7 +55,7 @@
 								</thead>	
 							<tbody>
 								<tr t-foreach="o.insp_rslt" t-as="line">
-									<td style="border: 1px solid black"><span t-field="        	"/></td>
+									<td style="border: 1px solid black"><span t-field=" o.no      	"/></td>
 									<td style="border: 1px solid black"><span t-field="o.product_id"/></td>
 									<td style="border: 1px solid black"><span t-field="o.name"/></td>
 									<td style="border: 1px solid black"><span t-field="o.quantity"/></td>
