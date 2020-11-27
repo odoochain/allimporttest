@@ -18,11 +18,11 @@
 					<div class="page">
 								<div class="row mt32 mb32">
 									<div class="col-xs-6">
-										<strong>Name / Address</strong> <t t-esc="doc['partner_id']"/>
+										<strong>Name / Address</strong> <t t-esc="o.partner_id"/>
 									</div>
 
 									<div class="col-xs-6">
-										<strong>Invoice No:</strong> <t t-esc="doc['number']"/>
+										<strong>Invoice No:</strong> <t t-esc="o.number"/>
 									</div>
 								</div>
 					</div>
@@ -30,11 +30,11 @@
 					<div class="page">
 								<div class="row mt32 mb32">
 									<div class="col-xs-6">
-										<strong>Tax ID No.</strong> <t t-esc="doc['vat']"/>
+										<strong>Tax ID No.</strong> <t t-esc="o.vat"/>
 									</div>
 
 									<div class="col-xs-6">
-										<strong>Invoice Date:</strong> <t t-esc="doc['date_invoice']"/>
+										<strong>Invoice Date:</strong> <t t-esc="o.date_invoice"/>
 									</div>
 						</div>
 					</div>
