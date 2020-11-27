@@ -20,10 +20,11 @@
 									<div class="col-xs-6">
 										<strong>Name / Address</strong> <t t-esc="o.partner_id"/>
 									</div>
-
-									<div class="col-xs-6">
+									<!--
+                                    <div class="col-xs-6">
 										<strong>Invoice No:</strong> <t t-esc="o.number"/>
-									</div>
+									</div>-->
+									
 								</div>
 					</div>
 
@@ -45,7 +46,7 @@
 							<table border="1" class="table table-condensed" style="border-style:solid">
 								<thead>
 										<tr>
-											<th style="border: 1px solid black" class="text-center">No. </th>
+											    <!--<th style="border: 1px solid black" class="text-center">No. </th>-->
 												<th style="border: 1px solid black" class="text-center">Item No. </th>
 												<th style="border: 1px solid black" class="text-center">Description </th>
 												<th style="border: 1px solid black" class="text-center">Quantity</th>
@@ -55,7 +56,7 @@
 								</thead>	
 							<tbody>
 								<tr t-foreach="o.insp_rslt" t-as="line">
-									<td style="border: 1px solid black"><span t-field=" o.no      	"/></td>
+									<!--<td style="border: 1px solid black"><span t-field=" o.no      	"/></td>-->
 									<td style="border: 1px solid black"><span t-field="o.product_id"/></td>
 									<td style="border: 1px solid black"><span t-field="o.name"/></td>
 									<td style="border: 1px solid black"><span t-field="o.quantity"/></td>
