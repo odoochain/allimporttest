@@ -75,33 +75,33 @@
 								<tr class="border-black o_price_subtotal" style="">
 									<td><strong>Grand Total</strong></td>
 									<td class="text-right">
-										<span t-field="o.price_subtotal"/>
+										<span t-field="line.price_subtotal"/>
 									</td>
 								</tr>     
-								<tr class="border-black o_">
+								<!--<tr class="border-black o_">
 								<td><strong>Discount</strong></td>
 								<td class="text-right">
 									<span t-field="o.discount"/>
 								</td>
-								</tr>
+								</tr>-->
 								<tr class="border-black o_discount_subtotal">
 									<td><strong>Total Baht Excl. VAT</strong></td>
 									<td class="text-right">
-										<span t-field="o.price_subtotal - o.discount"/>
+										<span t-field="line.price_subtotal - line.discount"/>
 									</td>
 								</tr>
 
-								<tr class="border-black o_amount_tax">
+								<!--<tr class="border-black o_amount_tax">
 									<td><strong>VAT 7%</strong></td>
 									<td class="text-right">
-										<span t-field="o.amount_tax"/>
+										<span t-field="line.amount_tax"/>
 									</td>
-								</tr>
+								</tr>-->
 
 								<tr class="border-black o_amount_total">
 									<td><strong>Total Baht Incl. VAT</strong></td>
 									<td class="text-right">
-										<span t-field="o.amount_total"/>
+										<span t-field="line.amount_total"/>
 									</td>
 								</tr>
 							</table>
