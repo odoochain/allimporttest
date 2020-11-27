@@ -33,7 +33,7 @@
                                                 <br></br>
 		                                    </div>
 									
-                                    <div class="col-3 bm-2">
+                                    <div class="col-3 bm-5">
 										<strong>Invoice No:</strong> <t t-esc="o.name"/>
 									</div>
 									
