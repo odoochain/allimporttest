@@ -39,6 +39,19 @@
 								</div>
 								
 					</div>
+
+					<div class="row">
+    <div class="col-sm-7">
+        <div class="raised-block">
+            <h3>Facebook</h3>
+        </div>
+    </div>
+    <div class="col-sm-5">
+        <div class="raised-block">
+            <h3>Tweets</h3>
+        </div>
+    </div>
+</div>
 					
                     <div class="page">
 								<div class="row mt32 mb32">
