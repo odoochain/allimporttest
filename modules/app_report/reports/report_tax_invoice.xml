@@ -39,6 +39,14 @@
 									
 									
 								</div>
+								<div class="row">
+    <div class="col-md-6" style="background-color:yellow;">
+      Lorem 
+    </div>
+    <div class="col-md-6" style="background-color:pink;">
+      Sed ut 
+    </div>
+  </div>
 					</div>
 
 					<div class="page">
