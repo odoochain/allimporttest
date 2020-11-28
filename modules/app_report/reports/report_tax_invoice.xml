@@ -36,18 +36,22 @@
                                     <div class="col-3 bm-2" >
 										<strong>Invoice No:</strong> <t t-esc="o.name"/>
 									</div>
-									<div class="row">
-    <div class="col-md-6" style="background-color:yellow;">
-      Lorem 
-    </div>
-    <div class="col-md-6" style="background-color:pink;">
-      Sed ut 
-    </div>
-  </div>
-									
 								</div>
 								
 					</div>
+					
+					<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-md-6" style="background-color:yellow;">
+      Lorem ipsum dolor 
+    </div>
+    <div class="col-md-6" style="background-color:pink;">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </div>
+  </div>
+</div>
+
 
 					<div class="page">
 								<div class="row mt32 mb32">
