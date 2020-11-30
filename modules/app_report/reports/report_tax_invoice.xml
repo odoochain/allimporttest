@@ -9,12 +9,12 @@
 			<div class="footer">
         <div class="text-right" style="border-top: 1px solid black;">        
 
-            <ul class="list-inline">
-                <li>Page:</li>
-                <li><span class="page"/></li>
-                <li>/</li>
-                <li><span class="topage"/></li>
-            </ul>
+            <small>
+                        <span>Page</span>
+                        <span class="page" />
+                        of
+                        <span class="topage" />
+                    </small>
         </div>
     </div>     
                 <div class="page">
