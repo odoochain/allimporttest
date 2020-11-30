@@ -37,7 +37,6 @@
 										<strong>Invoice No:</strong> <t t-esc="o.name"/>
 									</div>
                                 </div>
-							    
 					</div>
 					<br></br>
 
@@ -94,12 +93,12 @@
 										<span t-field="o.amount_untaxed"/>
 									</td>
 								</tr>     
-								<tr class="border-black o_">
+								<!--<tr class="border-black o_">
 								<td><strong>Discount</strong></td>
 								<td class="text-right">
-									<span t-field="o.product_id.discount"/>
+									<span t-field="o.discount"/>
 								</td>
-								</tr>
+								</tr>-->
 								<!--<tr class="border-black o_discount_subtotal">
 									<td><strong>Total Baht Excl. VAT</strong></td>
 									<td class="text-right">
@@ -107,12 +106,12 @@
 									</td>
 								</tr>-->
 
-								<!--<tr class="border-black o_amount_tax">
+								<tr class="border-black o_amount_tax">
 									<td><strong>VAT 7%</strong></td>
 									<td class="text-right">
-										<span t-field="line.amount_tax"/>
+										<span t-field="o.amount_tax"/>
 									</td>
-								</tr>-->
+								</tr>
 
 								<tr class="border-black o_amount_total">
 									<td><strong>Total Baht Incl. VAT</strong></td>
