@@ -105,7 +105,7 @@
 								<tr class="border-black o_">
 								<td><strong>Discount</strong></td>
 								<td class="text-right">
-									<span t-field="o['discount']"/>
+									<span t-field="o.discount"/>
 								</td>
 								</tr>
 								<!--<tr class="border-black o_discount_subtotal">
