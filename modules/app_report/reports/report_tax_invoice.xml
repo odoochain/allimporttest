@@ -41,7 +41,7 @@
 					<div class="page">
 								<div class="row mt32 mb32">
 									<div class="col-xs-6">
-										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat"/>&nbps;&nbps;&nbps;
+										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat"/>
 									</div>
                                     
 									<div class="col-xs-6">
