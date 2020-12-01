@@ -26,11 +26,8 @@
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
                 <div class="page">
-					<div class="oe_structure" />
-
-                  
-
-					<div class="text-center">
+					<!--<div class="oe_structure" />
+                        <div class="text-center">
 						<br></br>
 						<p style="text-align:center;">
 						<img t-att-src="'app_report/static/description/crea-icon.jpg'"/>
@@ -42,8 +39,8 @@
 
 						<h4>TAX INVOICE / OFFICIAL RECEIPT</h4>
 						<br></br>
-					</div>
-				</div>
+					    </div>
+				    </div>-->
 
 				<div class="page">
 					<div class="page">
