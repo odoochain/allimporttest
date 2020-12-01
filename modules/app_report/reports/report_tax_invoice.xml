@@ -120,10 +120,10 @@
 									</td>
 								</tr>
 
-								<tr class="border-black o_move_id">
+								<tr class="border-black o_line_ids">
 									<td><strong>Discount</strong></td>
 									<td class="text-right">
-										<span t-field="o.move_id.discount"/>
+										<span t-field="o.line_ids.discount"/>
 									</td>
 								</tr>
 
