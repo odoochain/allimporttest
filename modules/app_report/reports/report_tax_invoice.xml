@@ -12,6 +12,11 @@
 						<p style="text-align:center;">
 						<img t-att-src="'app_report/static/description/crea-icon.jpg'"/>
 						</p>
+						
+						<br></br>
+						<h4>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h4>
+						<br></br>
+
 						<h4>TAX INVOICE / OFFICIAL RECEIPT</h4>
 						<br></br>
 					</div>
