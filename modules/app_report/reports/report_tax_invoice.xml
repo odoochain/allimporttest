@@ -12,7 +12,7 @@
 				   Khlong Toei, Bangkok,<br></br>
 				   Thailand 10110</small>
 				</div>
-				<div class="text-center">
+				<!--<div class="text-center">
 					
 					<p style="text-align:center;">
 						<img t-att-src="'app_report/static/description/crea-icon.jpg'" style="max-height: 125px;max-width: 200px"/>
@@ -22,7 +22,7 @@
 					<br></br>
                     <h4><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h4>
 					<br></br>
-				</div>
+				</div>-->
 				<!--<div class="text-right" >
 				    <small><strong>บริษัท ครีเอเทรดดิ้ง จำกัด (สำนักงานใหญ่)</strong><br></br>
 				    <br></br>
@@ -36,7 +36,7 @@
 	<t t-call="web.html_container">
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
-                <!--<div class="page">
+                <div class="page">
 					<div class="oe_structure" />
                         <div class="text-center">
 						<br></br>
@@ -52,7 +52,7 @@
 						<br></br>
 					    </div>
 				    </div>
-				</div>-->
+				</div>
 
 				<div class="page">
 					<div class="page">
