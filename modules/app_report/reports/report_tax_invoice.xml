@@ -57,7 +57,7 @@
 				    </div>-->
 				
 
-				<div class="page">
+				
 					<div class="page">
 								<div class="row">
 									<!--<div class="col-xs-6">
@@ -129,7 +129,7 @@
 							</table>
 						</div>
 					</div>
-				</div>
+				
 				<div class="clearfix">
 					<div id="total" class="row">
 						<div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
