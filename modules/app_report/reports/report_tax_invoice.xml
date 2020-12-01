@@ -4,11 +4,11 @@
 	<template id="report_tax_invoice">
 	<div class="header">
                    <div class="text-left" style="border-top: 1px solid black;">
-				   <p>Crea Trading Co.,Ltd.(Head Office)</p><br></br>
-				   <p>712/1 TBI Building, 6th Floor</p><br></br>
-				   <p>Soi Sukhumvit 26 and 28, Khlon Ton,</p><br></br>
-				   <p>Khlong Toei, Bangkok,</p><br></br>
-				   <p>Thailand 10110</p>
+				   <h5>Crea Trading Co.,Ltd.(Head Office)<br></br>
+				   712/1 TBI Building, 6th Floor<br></br>
+				   Soi Sukhumvit 26 and 28, Khlon Ton,<br></br>
+				   Khlong Toei, Bangkok,<br></br>
+				   Thailand 10110</h5>
 				   </div>
 				</div> 
 	<t t-call="web.html_container">
