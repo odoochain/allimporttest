@@ -120,6 +120,13 @@
 									</td>
 								</tr>
 
+								<tr class="border-black o_move_id">
+									<td><strong>Discount</strong></td>
+									<td class="text-right">
+										<span t-field="o.move_id.discount"/>
+									</td>
+								</tr>
+
 								<tr class="border-black o_amount_total">
 									<td><strong>Total Baht Incl. VAT</strong></td>
 									<td class="text-right">
