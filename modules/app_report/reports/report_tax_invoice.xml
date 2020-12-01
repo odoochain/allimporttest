@@ -5,6 +5,15 @@
 	
 	    <div class="header">
             <div class="row">
+                <div class="col-xs-2 text-left">
+                    <small><strong>Crea Trading Co.,Ltd.(Head Office)</strong><br></br>
+				   <br></br>
+				   712/1 TBI Building, 6th Floor<br></br>
+				   Soi Sukhumvit 26 and 28, Khlon Ton,<br></br>
+				   Khlong Toei, Bangkok,<br></br>
+				   Thailand 10110</small>
+                </div>
+
                 <div class="col-xs-3 text-center">
                     <img t-att-src="'app_report/static/description/crea-icon.jpg'"  style="max-height: 125px;max-width: 200px"/>
 
@@ -142,14 +151,14 @@
 									</td>
 								</tr>
 
-								<tr class="border-black o_line_ids">
+								<!--<tr class="border-black o_line_ids">
 									<td><strong>ส่วนลด / Discount</strong></td>
 									<td class="text-right">
 										<t t-foreach = "o.line_ids" t-as = "line">
 											<span t-field="line.discount"/>
 										</t>
 									</td>
-								</tr>
+								</tr>-->
 
 								<tr class="border-black o_amount_total">
 									<td><strong>รวมบาท ภาษีมูลค่าเพิ่ม / <br></br>Total Baht Incl. VAT</strong></td>
