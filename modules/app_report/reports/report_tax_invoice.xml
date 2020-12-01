@@ -23,7 +23,7 @@
                     <h4><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h4>
 					<br></br>
 				</div>-->
-				<div class="text-right" >
+				<div class="text-right" style="margin-top:20px;" >
 				    <small><strong>บริษัท ครีเอเทรดดิ้ง จำกัด (สำนักงานใหญ่)</strong><br></br>
 				    <br></br>
 				    712/1 อาคาร TBI ชั้น 6 <br></br>
@@ -41,7 +41,7 @@
                         <div class="text-center">
 						<br></br>
 						<p style="text-align:center;">
-						<img t-att-src="'app_report/static/description/crea-icon.jpg'"/>
+						<img t-att-src="'app_report/static/description/crea-icon.jpg'" style="max-height: 45px;"/>
 						</p>
 
 						<br></br>
