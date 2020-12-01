@@ -11,7 +11,7 @@
 				   Thailand 10110</small>
 				</div>
 				<div class="text-center">
-					<br></br>
+					
 					<p style="text-align:center;">
 						<img t-att-src="'app_report/static/description/crea-icon.jpg'"/>
 					</p>
@@ -96,10 +96,10 @@
 										<tr>
 											    <!--<th style="border: 1px solid black" class="text-center">No. </th>-->
 												<th style="border: 1px solid black" class="text-center">สินค้า <br></br>Product</th>
-												<th style="border: 1px solid black" class="text-center">Description </th>
-												<th style="border: 1px solid black" class="text-center">Quantity</th>
-												<th style="border: 1px solid black" class="text-center">Unit Price </th>
-												<th style="border: 1px solid black" class="text-center">Amount </th>
+												<th style="border: 1px solid black" class="text-center">คำอธิบาย <br></br>Description </th>
+												<th style="border: 1px solid black" class="text-center">ปริมาณ <br></br>Quantity</th>
+												<th style="border: 1px solid black" class="text-center">ราคาต่อหน่วย <br></br>Unit Price </th>
+												<th style="border: 1px solid black" class="text-center">จำนวน <br></br>Amount </th>
 										</tr>
 								</thead>	
 							<tbody>
