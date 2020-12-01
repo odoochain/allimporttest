@@ -17,7 +17,7 @@
 						<h3>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h3>
 						<br></br>
 
-						<h4>TAX INVOICE / OFFICIAL RECEIPT</h3>
+						<h3>TAX INVOICE / OFFICIAL RECEIPT</h3>
 						<br></br>
 					</div>
 				</div>
@@ -30,6 +30,7 @@
 									</div>-->
 									<div class="col-xs-6">
 									<strong>ชื่อ / ที่อยู่ : </strong>
+									<br></br>
 									    <strong>Name / Address :</strong>
                                             <div t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True, "phone_icons": True}'/>
                                                 <p t-if="o.partner_id.vat">
