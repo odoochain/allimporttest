@@ -2,15 +2,15 @@
 <odoo>
  
 	<template id="report_tax_invoice">
-	<div class="header">
-                   <div class="text-left" style="border-top: 1px solid black;">
-				   <h5>Crea Trading Co.,Ltd.(Head Office)<br></br>
+	    <div class="header">
+                <div class="text-left" style="border-top: 1px solid black;">
+				   <small>Crea Trading Co.,Ltd.(Head Office)<br></br>
 				   712/1 TBI Building, 6th Floor<br></br>
 				   Soi Sukhumvit 26 and 28, Khlon Ton,<br></br>
 				   Khlong Toei, Bangkok,<br></br>
-				   Thailand 10110</h5>
-				   </div>
-				</div> 
+				   Thailand 10110</small>
+				</div>
+		</div> 
 	<t t-call="web.html_container">
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
@@ -84,7 +84,7 @@
 								<thead>
 										<tr>
 											    <!--<th style="border: 1px solid black" class="text-center">No. </th>-->
-												<th style="border: 1px solid black" class="text-center">Product </th>
+												<th style="border: 1px solid black" class="text-center">Product <br></br> สินค้า </th>
 												<th style="border: 1px solid black" class="text-center">Description </th>
 												<th style="border: 1px solid black" class="text-center">Quantity</th>
 												<th style="border: 1px solid black" class="text-center">Unit Price </th>
