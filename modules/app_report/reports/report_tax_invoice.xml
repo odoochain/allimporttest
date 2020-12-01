@@ -42,6 +42,7 @@
 
                                     <div class="col-3 bm-2" >
 									    <strong>เลขที่ใบแจ้งหนี้</strong>
+										<br></br>
 										<strong>Invoice No:</strong> <t t-esc="o.name"/>
 										<br></br>
 									</div>
@@ -51,11 +52,13 @@
 								<div class="row mt32 mb32">
 									<div class="col-xs-6">
 									    <strong>เลขประจำตัวผู้เสียภาษี</strong>
+										<br></br>
 										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat"/>
 									</div>
                                     <br></br>
 									<div class="col-xs-6">
 									    <strong>วันที่ในใบแจ้งหนี้</strong>
+										<br></br>
 										<strong>Invoice Date:</strong> <t t-esc="o.invoice_date"/>
 									</div>
 
