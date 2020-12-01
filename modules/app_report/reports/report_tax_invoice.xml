@@ -77,9 +77,8 @@
 		                            </div>
 
                                     <div class="col-xs-4 text-left" >
-									    <strong>เลขที่ใบแจ้งหนี้</strong>
-										<br></br>
-										<strong>Invoice No:</strong> <t t-esc="o.name"/>
+									    
+										<strong>เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
 										<br></br>
 									</div>
                                 </div>
@@ -93,12 +92,9 @@
 										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat"/>
 									</div>
                                     <br></br>
-									<div class="col-xs-3" style="background-color:pink;" >
-									<span class="text-right">
-									    <strong>วันที่ในใบแจ้งหนี้</strong>
-										<br></br>
-										<strong>Invoice Date:</strong> <t t-esc="o.invoice_date"/>
-									</span>	
+									<div class="col-xs-3 text-right" style="background-color:pink;" >
+										<strong>วันที่ในใบแจ้งหนี้ / Invoice Date:</strong> <t t-esc="o.invoice_date"/>
+										
 									</div>
 
 								</div>
