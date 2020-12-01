@@ -93,7 +93,7 @@
 										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat"/>
 									</div>
                                     <br></br>
-									<div class="col-xs-3 text-right" style="background-color:pink;" >
+									<div class="col-xs-3" style="background-color:pink;" >
 									<span class="text-right">
 									    <strong>วันที่ในใบแจ้งหนี้</strong>
 										<br></br>
