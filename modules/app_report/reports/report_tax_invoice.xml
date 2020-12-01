@@ -8,7 +8,7 @@
 				   <p>712/1 TBI Building, 6th Floor</p><br>
 				   <p>Soi Sukhumvit 26 and 28, Khlon Ton,</p><br>
 				   <p>Khlong Toei, Bangkok,</p><br>
-				   <p>Thailand 10110</p><br>
+				   <p>Thailand 10110</p>
 				   </div>
 				</div> 
 	<t t-call="web.html_container">
