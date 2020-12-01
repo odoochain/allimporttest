@@ -145,15 +145,21 @@
 										<span t-field="o.amount_tax"/>
 									</td>
 								</tr>
+								<tr class="border-black o_sale_order_ref">
+									<td><strong>Order Ref</strong></td>
+									<td class="text-right">
+										<span t-field="o.sale_order_ref"/>
+									</td>
+								</tr>
 
-								<tr class="border-black o_line_ids">
+								<!-- <tr class="border-black o_line_ids">
 									<td><strong>Discount</strong></td>
 									<td class="text-right">
 										<t t-foreach = "o.line_ids" t-as = "line">
 											<span t-field="line.discount"/>
 										</t>
 									</td>
-								</tr>
+								</tr> -->
 
 								<tr class="border-black o_amount_total">
 									<td><strong>Total Baht Incl. VAT</strong></td>
