@@ -124,7 +124,8 @@
 									<td><strong>Discount</strong></td>
 									<td class="text-right">
 										<t t-foreach = "o.line_ids" t-as = "line">
-										<span t-field="line.discount"/>
+											<span t-field="line.discount"/>
+										</t>
 									</td>
 								</tr>
 
