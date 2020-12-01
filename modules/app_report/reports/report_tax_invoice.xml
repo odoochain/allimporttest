@@ -7,6 +7,13 @@
 			<t t-call="web.external_layout">
                 <div class="page">
 					<div class="oe_structure" />
+
+                <div class="header">
+                   <div class="text-left" style="border-top: 1px solid black;">
+				   <p>Address</p>
+				   </div>
+				</div>   
+
 					<div class="text-center">
 						<br></br>
 						<p style="text-align:center;">
