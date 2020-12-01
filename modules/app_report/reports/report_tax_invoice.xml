@@ -123,7 +123,8 @@
 								<tr class="border-black o_line_ids">
 									<td><strong>Discount</strong></td>
 									<td class="text-right">
-										<span t-field="o.line_ids.discount"/>
+										<t t-foreach = "o.line_ids" t-as = "line">
+										<span t-field="line.discount"/>
 									</td>
 								</tr>
 
