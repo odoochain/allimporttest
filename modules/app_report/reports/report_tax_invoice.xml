@@ -18,14 +18,14 @@
                     <br></br>
 					<h5>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h5>
 					<br></br>
-                    <h4>TAX INVOICE / OFFICIAL RECEIPT</h4>
+                    <h4><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h4>
 					<br></br>
 				</div>
 		</div> 
 	<t t-call="web.html_container">
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
-                <!--<div class="page">
+                <div class="page">
 					<div class="oe_structure" />
                         <div class="text-center">
 						<br></br>
@@ -41,7 +41,7 @@
 						<br></br>
 					    </div>
 				    </div>
-					</div>-->
+				</div>
 
 				
 					<div class="page">
