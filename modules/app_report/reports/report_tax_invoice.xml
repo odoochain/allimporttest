@@ -12,12 +12,12 @@
 						<p style="text-align:center;">
 						<img t-att-src="'app_report/static/description/crea-icon.jpg'"/>
 						</p>
-						
+
 						<br></br>
-						<h4>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h4>
+						<h3>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h3>
 						<br></br>
 
-						<h4>TAX INVOICE / OFFICIAL RECEIPT</h4>
+						<h4>TAX INVOICE / OFFICIAL RECEIPT</h3>
 						<br></br>
 					</div>
 				</div>
@@ -29,6 +29,7 @@
 										<strong>Name / Address</strong> <t t-esc="o.partner_id"/>
 									</div>-->
 									<div class="col-xs-6">
+									<strong>ชื่อ / ที่อยู่ : </strong>
 									    <strong>Name / Address :</strong>
                                             <div t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True, "phone_icons": True}'/>
                                                 <p t-if="o.partner_id.vat">
