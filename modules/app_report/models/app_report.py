@@ -1,4 +1,8 @@
 from odoo import models, fields, api
+import logging
+
+
+_logger = logging.getLogger(__name__)
 
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
@@ -19,7 +23,9 @@ class AccountMove_Data(models.Model):
             for line_items in order.line_items_ids:
                 # cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
                 cal_discount = 25
-            print(cal_discount)
+            _logger.warning('*************************************')
+            _logger.warning("IT IS warn")
+            _logger.warning(cal_discount)
             order.calculated_discount = cal_discount
         
 
