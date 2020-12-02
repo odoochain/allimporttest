@@ -29,19 +29,22 @@ class AccountMove_Data(models.Model):
 
     @api.depends('calculated_discount', 'amount_total')
     def _cal_total_baht_escl_vat(self):
-        self.total_baht_excl_VAT = self.amount_total - self.calculated_discount
+        for orders in self:
+            orders.total_baht_excl_VAT = orders.amount_total - orders.calculated_discount
 
     total_baht_excl_VAT = fields.Float(string = 'Total Baht Excl VAT', compute = '_cal_total_baht_escl_vat', store= True)
 
     @api.depends('total_baht_excl_VAT')
     def _cal_total_baht_incl_vat(self):
-        self.total_baht_incl_VAT = self.total_baht_excl_VAT / 1.07
+        for orders in self:
+            orders.total_baht_incl_VAT = orders.total_baht_excl_VAT / 1.07
 
     total_baht_incl_VAT = fields.Float(string = 'Total Baht Incl VAT', compute = '_cal_total_baht_incl_vat', store = True)
 
     @api.depends('total_baht_excl_VAT','total_baht_incl_VAT')
     def _cal_total_vat(self):
-        self.vat = self.total_baht_incl_VAT - self.total_baht_excl_VAT
+        for orders in self:
+            orders.vat = orders.total_baht_incl_VAT - orders.total_baht_excl_VAT
 
     vat = fields.Float(string = 'Vat', compute = '_cal_total_vat', store = True)
 
