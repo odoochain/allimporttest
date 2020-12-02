@@ -148,7 +148,7 @@
 								<tr class="border-black o_total_baht_excl_VAT">
 								<td><strong>รวมบาทไม่รวม ภาษีมูลค่าเพิ่ม / Total Baht Excl. Vat</strong></td>
 								<td class="text-right">
-									<span t-field="o.total_baht_excl_VAT"/>
+									<span t-field="o.round(total_baht_excl_VAT)"/>
 								</td>	
 								</tr>
 								<!--<tr class="border-black o_discount_subtotal">
