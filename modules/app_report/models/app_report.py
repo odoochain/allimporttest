@@ -29,11 +29,11 @@ class AccountMove_Data(models.Model):
 
     @api.depends('line_ids.price_unit','line_ids.quantity')
     def _cal_total_price(self):
-        for orders in self:
+        for order in self:
             order_total = 0
-            for lines in orders.line_ids:
+            for lines in order.line_ids:
                 order_total = order_total + (lines.price_unit * lines.quantity)
-            orders.price_totals = order_total
+            order.price_totals = order_total
 
     price_totals = fields.Float(string='Total Line Price', compute = '_cal_total_price',store = True, digits=(12,4))
 
