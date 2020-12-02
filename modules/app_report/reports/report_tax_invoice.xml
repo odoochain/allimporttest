@@ -86,13 +86,13 @@
 					
 					<div class="page">
 								<div class="row">
-									<div class="col-xs-9" style="background-color:yellow;" >
+									<div class="col-xs-9"  >
 									    <strong>เลขประจำตัวผู้เสียภาษี</strong>
 										<br></br>
 										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat"/>
 									</div>
                                     <br></br>
-									<div class="col-xs-3 text-right" style="background-color:pink;"  >
+									<div class="col-xs-3 text-right"  >
 										<strong>วันที่ในใบแจ้งหนี้ / Invoice Date:</strong> <t t-esc="o.invoice_date" class="m-0 text-right"/>
 										
 									</div>
