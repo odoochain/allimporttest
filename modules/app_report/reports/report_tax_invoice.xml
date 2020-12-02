@@ -14,7 +14,7 @@
 				   Thailand 10110</small>
                 </div>
                 <br></br>
-                <div class="col-3 bm-2 text-left">
+                <div class="col-6 bm-2 text-right">
                     <p style="text-align:center;">
 						<img t-att-src="'app_report/static/description/crea-icon.jpg'" style="max-height: 125px;max-width: 250px"/>
 					</p>
@@ -25,7 +25,7 @@
 					
                 </div>
                 <br></br>
-                <div class="col-6 bm-2 text-right">
+                <div class="col-3 bm-2 text-right">
                     <small><strong>บริษัท ครีเอเทรดดิ้ง จำกัด (สำนักงานใหญ่)</strong><br></br>
 					<br></br>
 				    712/1 อาคาร TBI ชั้น 6 <br></br>
