@@ -134,8 +134,9 @@
 						<div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
 							<table class="table table-sm">
 								<tr class="border-black o_price_subtotal" style="">
-									<td><center><strong>ผลรวมทั้งสิ้น / Grand Total</strong></center></td>
-									<td class="text-right">
+																	<td class="text-right">
+									<td><strong>ผลรวมทั้งสิ้น / Grand Total</strong></td>
+
 										<span t-field="o.amount_untaxed"/>
 									</td>
 								</tr>     
