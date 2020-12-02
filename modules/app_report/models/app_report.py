@@ -17,9 +17,10 @@ class AccountMove_Data(models.Model):
         for order in self:
             cal_discount = 0
             for line_items in order.line_items_ids:
-                cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
+                # cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
+                cal_discount = 25
             print(cal_discount)
-            order.calculated_discount = 50
+            order.calculated_discount = cal_discount
         
 
     calculated_discount = fields.Float(string = 'Discount', compute = '_cal_total_discount', store = True)
