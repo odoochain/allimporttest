@@ -138,12 +138,12 @@
 										<span t-field="o.amount_untaxed"/>
 									</td>
 								</tr>     
-								<!--<tr class="border-black o_">
+								<tr class="border-black o_">
 								<td><strong>Discount</strong></td>
 								<td class="text-right">
-									<span t-field="o.discount"/>
+									<span t-field="o.calculated_discount"/>
 								</td>
-								</tr>-->
+								</tr>
 								<!--<tr class="border-black o_discount_subtotal">
 									<td><strong>รวมบาทไม่รวม ภาษีมูลค่าเพิ่ม / <br></br>Total Baht Excl. VAT</strong></td>
 									<td class="text-right">
