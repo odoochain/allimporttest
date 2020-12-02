@@ -68,8 +68,7 @@
 									<br></br>
 									    <strong>Name/Address :</strong>
 										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name"]}'/>
-										<strong>/</strong>
-										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "address"]}'/>
+										
                                                 
                                           <br></br><br></br>      
 
