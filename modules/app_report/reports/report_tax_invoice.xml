@@ -124,12 +124,8 @@
 									<td style="border: 1px solid black"><span t-field="line.price_unit"/></td>
 									<td style="border: 1px solid black"><span t-field="line.price_subtotal"/></td>
 								</tr>
-							</tbody>
-							</table>
-						</div>
-					</div>
-				
-				<div class="clearfix">
+
+								<div class="clearfix">
 					<div id="total" class="row">
 						<div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
 							<table class="table table-sm">
@@ -179,6 +175,12 @@
 						</div>
 					</div>
 				</div>
+							</tbody>
+							</table>
+						</div>
+					</div>
+				
+				
 
 				<div class="footer">
                     <div class="text-right" style="border-top: 1px solid black;">        
