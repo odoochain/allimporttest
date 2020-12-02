@@ -31,7 +31,7 @@ class AccountMove_Data(models.Model):
     def _cal_grand_total(self):
         for order in self:
             order.grand_total = order.amount_total + order.calculated_discount
-            
+
     grand_total = fields.Float(string = 'Grand Total', store = True, compute = '_cal_grand_total')
 
     @api.depends('calculated_discount', 'amount_total')
@@ -44,7 +44,7 @@ class AccountMove_Data(models.Model):
     @api.depends('total_baht_excl_VAT')
     def _cal_total_baht_incl_vat(self):
         for orders in self:
-            orders.total_baht_incl_VAT = orders.total_baht_excl_VAT / 1.07
+            orders.total_baht_incl_VAT = orders.total_baht_excl_VAT * 1.07
 
     total_baht_incl_VAT = fields.Float(string = 'Total Baht Incl VAT', compute = '_cal_total_baht_incl_vat', store = True, digits=(12,4))
 
