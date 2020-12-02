@@ -21,11 +21,10 @@ class AccountMove_Data(models.Model):
         for order in self:
             cal_discount = 0
             for line_items in order.line_ids:
-                # cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
-                cal_discount = 25
-            _logger.warning('*************************************')
-            _logger.warning("IT IS warn")
-            _logger.warning(cal_discount)
+                cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
+            # _logger.warning('*************************************')
+            # _logger.warning("IT IS warn")
+            # _logger.warning(cal_discount)
             order.calculated_discount = cal_discount
         
 
