@@ -30,14 +30,18 @@ class AccountMove_Data(models.Model):
     @api.depends('line_ids.price_unit','line_ids.quantity')
     def _cal_total_price(self):
         for order in self:
-            order_total = 0
-            for lines in order.line_ids:
-                order_total = order_total + (lines.price_unit * lines.quantity)
-            order.price_totals = order_total
+            cal_discount = 0
+            for line_items in order.line_ids:
+                cal_discount = cal_discount + (line_items.quantity * line_items.price_unit )
+            # _logger.warning('*************************************')
+            # _logger.warning("IT IS warn")
+            # _logger.warning(cal_discount)
+            order.total_price = cal_discount
+        
 
-    price_totals = fields.Float(string='Total Line Price', compute = '_cal_total_price',store = True, digits=(12,4))
+    total_price = fields.Float(string = 'Total Price', compute = '_cal_total_price', store = True, digits=(12,4))
 
-    @api.depends('calculated_discount', 'price_totals')
+    @api.depends('calculated_discount', 'total_price')
     def _cal_total_baht_escl_vat(self):
         for orders in self:
             orders.total_baht_excl_VAT = orders.price_totals - orders.calculated_discount
