@@ -8,7 +8,9 @@ class AccountMove_Data(models.Model):
     _inherit = 'account.move'
     salesorder_id = fields.Many2one('sale.order', string='Sales Order Id')
     sale_order_ref = fields.Float(related = 'salesorder_id.order_ref', store = True)
-    line_items_id = fields.One2many('account.move.line', 'move_id', string='Invoice Items Line')
+    # line_items_id = fields.One2many('account.move.line', 'move_id', string='Invoice Items Line')
+
+    line_items_ids = fields.One2many('account.move.line', 'move_line_id', string='Invoice Items')
 
     @api.depends('line_items_id')
     def _cal_total_discount(self):
@@ -21,5 +23,7 @@ class AccountMove_Data(models.Model):
 
     calculated_discount = fields.Float(string = 'Discount', compute = '_cal_total_discount', store = True)
 
-# class AccountMove_Line_Data(models.Model):
+class AccountMove_Line_Data(models.Model):
+    _inherit = 'account.move.line'
+    move_line_id = fields.Many2one('account.move', string='Move Id')
 
