@@ -67,7 +67,7 @@
 									<strong>ชื่อ / ที่อยู่ </strong>
 									<br></br>
 									    <strong>Name/Address :</strong>
-										<div t-field="o.partner_id" t-options='{"widget": "contact", "fields": [ "name"]}'/>
+										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name"]}'/>
                                                 
                                                 <br></br><br></br>
 
