@@ -85,14 +85,14 @@
 					</div>
 					
 					<div class="page">
-								<div class="row">
-									<div class="col-xs-4 "  >
+								<div class="row mt32 mb32">
+									<div class="col-3 bm-2 "  >
 									    <strong>เลขประจำตัวผู้เสียภาษี</strong>
 										<br></br>
 										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat" class="m-0 text-left"/>
 									</div>
                                     <br></br>
-									<div class="col-xs-8 text-right"  >
+									<div class="col-6 bm-2 text-right"  >
 									<span>
 										<strong>วันที่ในใบแจ้งหนี้ / Invoice Date:</strong>
 										<t t-esc="o.invoice_date" class="m-0 text-right"/>
