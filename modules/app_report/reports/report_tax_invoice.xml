@@ -59,6 +59,14 @@
 
 				
 					<div class="page">
+
+					           <div class="row">
+                                    <div class="col-xs-12 text-right" >
+									    
+										<strong>เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name" class="m-0 text-right"/>
+										<br></br>
+									</div>
+                                </div>
 								<div class="row ">
 									<!--<div class="col-xs-6">
 										<strong>Name / Address</strong> <t t-esc="o.partner_id"/>
@@ -73,13 +81,7 @@
 		                            </div>
 									</div>
                                 
-								<div class="row">
-                                    <div class="col-xs-12 text-right" >
-									    
-										<strong>เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name" class="m-0 text-right"/>
-										<br></br>
-									</div>
-                                </div>
+								
 								
 					</div>
 					
