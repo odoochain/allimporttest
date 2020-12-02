@@ -16,12 +16,12 @@ class AccountMove_Data(models.Model):
 
     # line_items_ids = fields.One2many('account.move.line', 'move_line_id', string='Invoice Items')
 
-    @api.depends('line_ids.price_unit', 'line_ids.discount')
+    @api.depends('line_ids.price_unit', 'line_ids.discount','line_ids.quantity')
     def _cal_total_discount(self):
         for order in self:
             cal_discount = 0
             for line_items in order.line_ids:
-                cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
+                cal_discount = cal_discount + (line_items.quantity * line_items.price_unit * line_items.discount) / 100
             # _logger.warning('*************************************')
             # _logger.warning("IT IS warn")
             # _logger.warning(cal_discount)
