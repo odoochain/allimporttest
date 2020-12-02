@@ -12,13 +12,14 @@ class AccountMove_Data(models.Model):
 
     line_items_ids = fields.One2many('account.move.line', 'move_line_id', string='Invoice Items')
 
-    @api.depends('line_items_ids')
+    @api.depends('line_items_ids.price_unit', 'line_items_ids.discount')
     def _cal_total_discount(self):
         for order in self:
             cal_discount = 0
             for line_items in order.line_items_ids:
                 cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
-            order.calculated_discount = cal_discount
+            print(cal_discount)
+            order.calculated_discount = 50
         
 
     calculated_discount = fields.Float(string = 'Discount', compute = '_cal_total_discount', store = True)
