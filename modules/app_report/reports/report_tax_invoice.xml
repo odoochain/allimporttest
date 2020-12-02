@@ -93,7 +93,8 @@
 									</div>
                                     <br></br>
 									<div class="col-xs-3 text-right"  >
-										<strong>วันที่ในใบแจ้งหนี้ / Invoice Date:</strong> <t t-esc="o.invoice_date" class="m-0 text-right"/>
+										<strong>วันที่ในใบแจ้งหนี้ / Invoice Date:</strong> <br></br>
+										<t t-esc="o.invoice_date" class="m-0 text-right"/>
 										
 									</div>
 
