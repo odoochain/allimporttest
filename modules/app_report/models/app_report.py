@@ -14,13 +14,13 @@ class AccountMove_Data(models.Model):
     sale_order_ref = fields.Float(related = 'salesorder_id.order_ref', store = True)
     # line_items_id = fields.One2many('account.move.line', 'move_id', string='Invoice Items Line')
 
-    line_items_ids = fields.One2many('account.move.line', 'move_line_id', string='Invoice Items')
+    # line_items_ids = fields.One2many('account.move.line', 'move_line_id', string='Invoice Items')
 
-    @api.depends('line_items_ids.price_unit', 'line_items_ids.discount')
+    @api.depends('line_ids.price_unit', 'line_ids.discount')
     def _cal_total_discount(self):
         for order in self:
             cal_discount = 0
-            for line_items in order.line_items_ids:
+            for line_items in order.line_ids:
                 # cal_discount = cal_discount + (line_items.price_unit * line_items.discount) / 100
                 cal_discount = 25
             _logger.warning('*************************************')
