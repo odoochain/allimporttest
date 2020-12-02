@@ -11,7 +11,7 @@
 				   712/1 TBI Building, 6th Floor<br></br>
 				   Soi Sukhumvit 26 and 28, Khlon Ton,<br></br>
 				   Khlong Toei, Bangkok,<br></br>
-				   Thailand 10110</small>
+				   Thailand 10110</small><br></br>
                 </div>
                 <br></br>
                 <div class="col-6 bm-2 text-right">
@@ -19,9 +19,9 @@
 						<img t-att-src="'app_report/static/description/crea-icon.jpg'" style="max-height: 125px;max-width: 250px"/>
 					</p>
                     <br></br>
-					<h6>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6>
+					</center><h6>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6></center>
 					
-                    <h5><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h5>
+                    <h5><center><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h5>
 					
                 </div>
                 <br></br>
@@ -35,7 +35,7 @@
                 </div>
 			</div>
 </div>		
-		 
+<br></br>		 
 	<t t-call="web.html_container">
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
