@@ -63,7 +63,8 @@
 					           <div class="row mt32 mb32">
                                     <div class="col-xs-12 text-right" >
 									    
-										<strong>เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
+										<strong>เลขที่ใบแจ้งหนี้ / Invoice No:</strong> 
+										<t t-esc="o.name" class="m-0 text-right"/>
 										
 									</div>
                                 </div>
