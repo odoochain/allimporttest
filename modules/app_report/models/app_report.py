@@ -27,24 +27,11 @@ class AccountMove_Data(models.Model):
 
     calculated_discount = fields.Float(string = 'Discount', compute = '_cal_total_discount', store = True, digits=(12,4))
 
-    @api.depends('line_ids.price_unit','line_ids.quantity')
-    def _cal_total_price(self):
-        for order in self:
-            cal_discount = 0
-            for line_items in order.line_ids:
-                cal_discount = cal_discount + (line_items.quantity * line_items.price_unit )
-            # _logger.warning('*************************************')
-            # _logger.warning("IT IS warn")
-            # _logger.warning(cal_discount)
-            order.total_price = cal_discount
-        
 
-    total_price = fields.Float(string = 'Total Price', compute = '_cal_total_price', store = True, digits=(12,4))
-
-    @api.depends('calculated_discount', 'total_price')
+    @api.depends('calculated_discount', 'amount_total')
     def _cal_total_baht_escl_vat(self):
         for orders in self:
-            orders.total_baht_excl_VAT = orders.total_price - orders.calculated_discount
+            orders.total_baht_excl_VAT = orders.amount_total
 
     total_baht_excl_VAT = fields.Float(string = 'Total Baht Excl VAT', compute = '_cal_total_baht_escl_vat', store= True, digits=(12,4))
 

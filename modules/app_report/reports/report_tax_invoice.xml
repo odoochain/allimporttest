@@ -135,7 +135,7 @@
 								<tr class="border-black o_price_subtotal" style="">
 									<td><strong>ผลรวมทั้งสิ้น / Grand Total</strong></td>
 									<td class="text-right">
-										<span t-field="o.amount_untaxed"/>
+										<span t-field="o.amount_total + o.discount"/>
 									</td>
 								</tr>     
 								<tr class="border-black o_calculated_discount">
@@ -149,7 +149,7 @@
 								<td><strong>Total Baht Excl. Vat</strong></td>
 								<td class="text-right">
 									<span t-field="o.total_baht_excl_VAT"/>
-								</td>
+								</td>	
 								</tr>
 								<!--<tr class="border-black o_discount_subtotal">
 									<td><strong>รวมบาทไม่รวม ภาษีมูลค่าเพิ่ม / <br></br>Total Baht Excl. VAT</strong></td>
