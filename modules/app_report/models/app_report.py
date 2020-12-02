@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 class SaleOrder_Data(models.Model):
-    _inhert = 'sale.order'
+    _inherit = 'sale.order'
     order_ref = fields.Float(string = 'Sales Order Ref')
 
 class AccountMove_Data(models.Model):
