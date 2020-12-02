@@ -152,14 +152,12 @@
 									</td>
 								</tr>
 
-								<!-- <tr class="border-black o_line_ids">
+								<tr class="border-black o_line_ids">
 									<td><strong>Discount</strong></td>
 									<td class="text-right">
-										<t t-foreach = "o.line_ids" t-as = "line">
-											<span t-field="line.discount"/>
-										</t>
+										<span t-field="o.calculated_discount"/>
 									</td>
-								</tr> -->
+								</tr>
 
 								<tr class="border-black o_amount_total">
 									<td><strong>Total Baht Incl. VAT</strong></td>
