@@ -69,7 +69,7 @@
 									    <strong>Name/Address :</strong>
 										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name"]}'/>
                                                 
-                                                
+                                          <br></br><br></br>      
 
 		                            </div>
 
