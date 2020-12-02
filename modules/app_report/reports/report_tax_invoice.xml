@@ -130,7 +130,7 @@
 								
 							</tbody>
 							<div class="clearfix">
-					<div id="total" class="row">
+					<div id="total" class="row text-center">
 						<div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
 							<table class="table table-sm">
 								<tr class="border-black o_price_subtotal" style="">
