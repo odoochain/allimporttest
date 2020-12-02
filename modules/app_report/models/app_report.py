@@ -27,10 +27,10 @@ class AccountMove_Data(models.Model):
 
     calculated_discount = fields.Float(string = 'Discount', compute = '_cal_total_discount', store = True, digits=(12,4))
 
-    @api.depends('amount_total','calculated_discount')
+    @api.depends('amount_untaxed','calculated_discount')
     def _cal_grand_total(self):
         for order in self:
-            order.grand_total = order.amount_total + order.calculated_discount
+            order.grand_total = order.amount_untaxed + order.calculated_discount
 
     grand_total = fields.Float(string = 'Grand Total', store = True, compute = '_cal_grand_total')
 
