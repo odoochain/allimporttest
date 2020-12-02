@@ -135,7 +135,7 @@
 								<tr class="border-black o_price_subtotal" style="">
 									<td><strong>ผลรวมทั้งสิ้น / Grand Total</strong></td>
 									<td class="text-right">
-										<span t-field="o.amount_total + o.discount"/>
+										<span t-field="o.grand_total"/>
 									</td>
 								</tr>     
 								<tr class="border-black o_calculated_discount">
