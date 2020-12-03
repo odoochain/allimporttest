@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>       
         
         <report 
@@ -8,6 +8,6 @@
             report_type="qweb-pdf"
             name="app_report.report_without_prices"
             attachment_use="False"
-            file="app_reort.report_without_prices"/>
+            file="app_report.report_without_prices"/>
 
 </odoo>            
