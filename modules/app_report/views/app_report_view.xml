@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id= "app_report_sales_order_form_view_new" model= "ir.ui.view">
         <field name="inherit_id" ref="sale.view_order_form"/>
@@ -18,4 +18,4 @@
                 </field>
         </field>
     </record>
-</odoo>
+</odoo> -->
