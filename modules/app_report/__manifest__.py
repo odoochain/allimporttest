@@ -11,7 +11,8 @@
         #'data/data.xml',
         'reports/report_tax_invoice.xml',
         'reports/reports.xml',
-        'view/account_report.xml'
+        'view/account_report.xml',
+        'view/report_without_prices.xml'
     ],
     'installable': True,
     'application':True,
