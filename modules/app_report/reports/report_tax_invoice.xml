@@ -67,7 +67,7 @@
 									<strong>ชื่อ / ที่อยู่ </strong>
 									<br></br>
 									    <strong>Name/Address :</strong>
-										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name","address"]}'/>
+										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name","address"], "no_marker": True, "phone_icons": True}'/>
 										
                                                 
                                           <br></br><br></br>      
@@ -152,7 +152,7 @@
 									</td>
 								</tr>-->
 
-								<tr class="border-black o_amount_tax" style="max-height:45px; max-width:35px">
+								<tr class="border-black o_amount_tax" style="max-height:85px; max-width:65px">
 									<td><strong>ภาษีมูลค่าเพิ่ม 7% / VAT 7%</strong></td>
 									<td class="text-right">
 										<span t-field="o.amount_tax"/>
