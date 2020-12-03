@@ -70,8 +70,9 @@
 									<strong>ชื่อ / ที่อยู่ </strong>
 									<br></br>
 									    <strong>Name/Address :</strong>
+										<small>
 										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name","address"], "no_marker": True, "phone_icons": True}'/>
-										
+										</small>
                                                    
 
 		                            </div>
