@@ -30,15 +30,15 @@
                 </div>
 			</div>
 			<div class = "row">
-				<div class="col-12 text-right" style="margin-bottom: 20px">
-					<center><h6>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6></center>
+				<div class="col-12 bm-2 text-right">
+					<center><h6 style="font-size:14px">ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6></center>
 					
-                    <center><h6><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h6></center>
+                    <center><h6 style="font-size:14px"><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h6></center>
 					
                 </div>
 			</div>
 		</div>		
-<br></br><br></br><br></br>				 
+	<br></br><br></br><br></br>				 
 	<t t-call="web.html_container">
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
@@ -67,9 +67,9 @@
 										<strong>Name / Address</strong> <t t-esc="o.partner_id"/>
 									</div>-->
 									<div class="col-3 bm-2">
-									<strong>ชื่อ / ที่อยู่ </strong>
+									<strong style="font-size:10px">ชื่อ / ที่อยู่ </strong>
 									<br></br>
-									    <strong>Name/Address :</strong>
+									    <strong style="font-size:10px">Name/Address :</strong>
 										<small>
 										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name","address"], "no_marker": True, "phone_icons": True}'/>
 										</small>
@@ -79,7 +79,7 @@
 
                                     <div class="col-9 bm-2 text-right" >
 									    
-										<strong>เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
+										<strong style="font-size:10px">เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
 									</div>
                                 </div>
 					</div>
@@ -87,14 +87,14 @@
 					<div class="page">
 								<div class="row mt32 mb32">
 									<div class="col-3 bm-2 "  >
-									    <strong>เลขประจำตัวผู้เสียภาษี</strong>
+									    <strong style="font-size:10px">เลขประจำตัวผู้เสียภาษี</strong>
 										<br></br>
-										<strong>Tax ID No.</strong> <t t-esc="o.partner_id.vat" class="m-0 text-left"/>
+										<strong style="font-size:10px">Tax ID No.</strong> <t t-esc="o.partner_id.vat" class="m-0 text-left"/>
 									</div>
                                     <br></br>
 									<div class="col-9 bm-2 text-right"  >
 									<span>
-										<strong>วันที่ในใบแจ้งหนี้ / Invoice Date:</strong>
+										<strong style="font-size:10px">วันที่ในใบแจ้งหนี้ / Invoice Date:</strong>
 										<t t-esc="o.invoice_date" class="m-0 text-right"/>
 									</span>	
 									</div>
