@@ -32,13 +32,15 @@
                 </div>
 			</div>
 
-			<div class="row">
-			<div class="col-xs-9 text-right">
-					<h6>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6>
+			<div class = "row">
+				<div class="col-12 bm-2 text-right">
+					<center><h6>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6></center>
 					
-                    <h5><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h5>
+                    <center><h5><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h5></center>
+					
+                </div>
 			</div>
-			</div>
+
 </div>		
 <br></br>		 
 	<t t-call="web.html_container">
