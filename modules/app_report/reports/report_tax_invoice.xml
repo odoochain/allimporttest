@@ -7,7 +7,6 @@
             <div class="row">
                 <div class="col-3 bm-2 text-left">
                     <small><strong>Crea Trading Co.,Ltd.(Head Office)</strong><br></br>
-				   <br></br>
 				   712/1 TBI Building, 6th Floor<br></br>
 				   Soi Sukhumvit 26 and 28, Khlon Ton,<br></br>
 				   Khlong Toei, Bangkok,<br></br>
@@ -24,7 +23,6 @@
                 <br></br>
                 <div class="col-3 bm-2 text-right">
                     <small><strong>บริษัท ครีเอเทรดดิ้ง จำกัด (สำนักงานใหญ่)</strong><br></br>
-					<br></br>
 				    712/1 อาคาร TBI ชั้น 6 <br></br>
 				    ซ. สุขุมวิท 26 และ 28 คลองต้น <br></br>
 				    คลองเตยกรุงเทพมหานคร <br></br>
@@ -75,7 +73,7 @@
 										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name","address"], "no_marker": True, "phone_icons": True}'/>
 										
                                                 
-                                          <br></br><br></br>      
+                                          <br></br>     
 
 		                            </div>
 
