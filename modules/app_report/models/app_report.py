@@ -6,12 +6,14 @@ _logger = logging.getLogger(__name__)
 
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
-    channel_order_number = fields.Float(string = 'Sales Order Ref')
+    channel_order_number = fields.Char(string = 'Sales Order Ref')
 
 class AccountMove_Data(models.Model):
     _inherit = 'account.move'
     salesorder_id = fields.Many2one('sale.order', string='Sales Order Id')
-    sale_order_ref = fields.Float(related = 'salesorder_id.channel_order_number', store = True)
+    sale_order_ref = fields.Char(related = 'salesorder_id.channel_order_number',string = 'Sales Order Reference', store = True)
+    sales_order_name = fields.Char(realted = 'salesorder_id.name', string = 'Sales Order Name')
+
 
     @api.depends('line_ids.price_unit', 'line_ids.discount','line_ids.quantity')
     def _cal_total_discount(self):
