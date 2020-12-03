@@ -10,8 +10,7 @@
 				   712/1 TBI Building, 6th Floor<br></br>
 				   Soi Sukhumvit 26 and 28, Khlon Ton,<br></br>
 				   Khlong Toei, Bangkok,<br></br>
-				   Thailand 10110<br></br>
-				   Tax ID : 0105562106328</small>
+				   Thailand 10110</small>
                 </div>
                 
                 <div class="col-6 bm-2 text-right">
@@ -27,21 +26,19 @@
 				    712/1 อาคาร TBI ชั้น 6 <br></br>
 				    ซ. สุขุมวิท 26 และ 28 คลองต้น <br></br>
 				    คลองเตยกรุงเทพมหานคร <br></br>
-				    ประเทศไทย 10110 <br></br>
-					เลขประจำตัวผู้เสียภาษี : 0105562106328</small>
+				    ประเทศไทย 10110 </small>
                 </div>
 			</div>
 			<div class = "row">
 				<div class="col-12 bm-2 text-right">
-					<center><h6>ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6></center>
+					<center><h6 style="font-size:14px">ใบกำกับภาษี / ใบเสร็จรับเงินอย่างเป็นทางการ</h6></center>
 					
-                    <center><h6><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h6></center>
+                    <center><h6 style="font-size:14px"><strong>TAX INVOICE / OFFICIAL RECEIPT</strong></h6></center>
 					
                 </div>
 			</div>
-			
 		</div>		
-<br></br><br></br><br></br>			 
+	<br></br><br></br><br></br>				 
 	<t t-call="web.html_container">
 		<t t-foreach="docs" t-as="o">
 			<t t-call="web.external_layout">
@@ -86,7 +83,7 @@
 									</div>
                                 </div>
 					</div>
-					<br></br>
+					
 					<div class="page">
 								<div class="row mt32 mb32">
 									<div class="col-3 bm-2 "  >
