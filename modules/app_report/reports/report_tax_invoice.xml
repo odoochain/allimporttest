@@ -110,8 +110,6 @@
 											    <!--<th style="border: 1px solid black" class="text-center">No. </th>-->
 												<th style="border: 1px solid black" class="text-center">สินค้า <br></br>Product</th>
 												<th style="border: 1px solid black" class="text-center">คำอธิบาย <br></br>Description </th>
-
-												
 												<th style="border: 1px solid black" class="text-center">ปริมาณ <br></br>Quantity</th>
 												<th style="border: 1px solid black" class="text-center">ราคาต่อหน่วย <br></br>Unit Price </th>
 												<th style="border: 1px solid black" class="text-center">จำนวน <br></br>Amount </th>
@@ -126,15 +124,16 @@
 									<td style="border: 1px solid black"><span t-field="line.price_unit"/></td>
 									<td style="border: 1px solid black"><span t-field="line.price_subtotal"/></td>
 								</tr>
-
-								
 							</tbody>
-							<div class="clearfix">
+							</table>
+						</div>
+					</div>
+				
+				<div class="clearfix">
 					<div id="total" class="row">
 						<div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
 							<table class="table table-sm">
 								<tr class="border-black o_price_subtotal" style="">
-
 									<td><strong>ผลรวมทั้งสิ้น / Grand Total</strong></td>
 									<td class="text-right">
 										<span t-field="o.amount_untaxed"/>
@@ -180,11 +179,6 @@
 						</div>
 					</div>
 				</div>
-							</table>
-						</div>
-					</div>
-				
-				
 
 				<div class="footer">
                     <div class="text-right" style="border-top: 1px solid black;">        
