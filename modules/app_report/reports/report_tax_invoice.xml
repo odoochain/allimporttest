@@ -70,9 +70,9 @@
 										<strong>Name / Address</strong> <t t-esc="o.partner_id"/>
 									</div>-->
 									<div class="col-3 bm-2">
-									<strong>ชื่อ / ที่อยู่ </strong>
+									<strong style="font-size:12px">ชื่อ / ที่อยู่ </strong>
 									<br></br>
-									    <strong>Name/Address :</strong>
+									    <strong style="font-size:12px">Name/Address :</strong>
 										<small>
 										<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "name","address"], "no_marker": True, "phone_icons": True}'/>
 										</small>
@@ -82,7 +82,7 @@
 
                                     <div class="col-9 bm-2 text-right" >
 									    
-										<strong>เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
+										<strong style="font-size:12px">เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
 									</div>
                                 </div>
 					</div>
