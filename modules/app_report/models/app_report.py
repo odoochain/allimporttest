@@ -6,14 +6,13 @@ _logger = logging.getLogger(__name__)
 
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
-    channel_order_number = fields.Char(string = 'Sales Order Ref')
+    channel_order_number = fields.Char(string = 'Sales Order Ref', store = True)
 
 class AccountMove_Data(models.Model):
     _inherit = 'account.move'
-    salesorder_id = fields.Many2one('sale.order', string='Sales Order Id')
-    order_ref_new = fields.Many2one(related='salesorder_id.channel_order_number', string='Order Number', store=True, readonly=True, index=True)
+    salesorder_id = fields.Many2one('sale.order', string='Sales Order Id', store = True)
     sale_order_ref = fields.Char(related = 'salesorder_id.channel_order_number',string = 'Sales Order Reference', store = True)
-    sales_order_name = fields.Char(related = 'salesorder_id.name', string = 'Sales Order Name')
+    sales_order_name = fields.Char(related = 'salesorder_id.name', string = 'Sales Order Name', store = True)
 
 
     @api.depends('line_ids.price_unit', 'line_ids.discount','line_ids.quantity')
