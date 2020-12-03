@@ -10,7 +10,8 @@
     'data': [
         #'data/data.xml',
         'reports/report_tax_invoice.xml',
-        'reports/reports.xml'
+        'reports/reports.xml',
+        'view/account_report.xml'
     ],
     'installable': True,
     'application':True,
