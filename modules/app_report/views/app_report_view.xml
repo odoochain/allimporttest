@@ -5,8 +5,7 @@
         <field name="model">sale.order</field >
         <field name="arch" type= "xml">
                <field name="date_order" position = "after" >
-                    <field name="channel_order_number"/> 
-                    <field name="order_ref_new" />    
+                    <field name="channel_order_number"/>   
                 </field>
         </field>
     </record>
