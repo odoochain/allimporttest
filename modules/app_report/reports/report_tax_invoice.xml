@@ -168,7 +168,7 @@
 									<td><strong>ส่วนลด / Discount</strong></td>
 									<td class="text-right">
 										<t t-foreach = "o.invoice_line_ids" t-as = "line">
-											<t t-esc="line.discount * line.price_unit"/>
+											<t t-esc="sum(line.discount * line.price_unit)" />
 										</t>
 									</td>
 								</tr>
