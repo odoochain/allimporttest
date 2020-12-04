@@ -5,6 +5,7 @@ from odoo import models, fields, api
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
 
+    channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True)
 
     def _prepare_invoice(self):
         
@@ -15,7 +16,7 @@ class SaleOrder_Data(models.Model):
         self.ensure_one()
         journal = self.env['account.move'].with_context(default_move_type='out_invoice')._get_default_journal()
         if not journal:
-            raise UserError(_('Please define an accounting sales journal for the company %s (%s).') % (self.company_id.name, self.company_id.id))
+            raise UserError(('Please define an accounting sales journal for the company %s (%s).') % (self.company_id.name, self.company_id.id))
 
         invoice_vals = {
             'ref': self.client_order_ref or '',
@@ -48,7 +49,7 @@ class AccountMove_Data(models.Model):
 
     seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)
 
-    channel_order_number = fields.Float(string = 'Channel Order No.',readonly=True, tracking=True)
+    channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
     
     @api.depends('line_ids.price_unit', 'line_ids.discount','line_ids.quantity')
     def _cal_total_discount(self):
