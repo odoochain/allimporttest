@@ -20,7 +20,7 @@ class Test_AccountMove(models.Model):
 class Test_AccountMoveLine(models.Model):
     _name = "account.move.line"
 
-    invoice_seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)    
+    invoice_seller_discount = fields.Float(string = 'Seller Discount')    
 
 
 class Test_SaleOrderLine(models.Model):
