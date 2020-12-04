@@ -18,7 +18,7 @@ class Test_AccountMove(models.Model):
     calculated_seller_discount = fields.Float(string = 'Total Seller Discount', compute = '_cal_total_seller_discount', store = True, digits=(12,4))
 """
 class Test_AccountMoveLine(models.Model):
-    _name = 'account.move.line'
+    _inherit = 'account.move.line'
 
     invoice_seller_discount = fields.Float(string = 'Seller Discount')    
 
