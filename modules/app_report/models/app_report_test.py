@@ -26,7 +26,7 @@ class Test_AccountMoveLine(models.Model):
 class Test_SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
-    seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)
+    seller_discount = fields.Float(string = 'Seller Discount',readonly=True)
 
 
 class Test_SaleOrder(models.Model):
