@@ -29,7 +29,6 @@ class SaleOrder_Data(models.Model):
             'invoice_user_id': self.user_id and self.user_id.id,
             'team_id': self.team_id.id,
             'channel_order_number':self.channel_order_number,
-            'seller_discount':self.seller_discount,
             'partner_id': self.partner_invoice_id.id,
             'partner_shipping_id': self.partner_shipping_id.id,
             'fiscal_position_id': (self.fiscal_position_id or self.fiscal_position_id.get_fiscal_position(self.partner_invoice_id.id)).id,
