@@ -4,7 +4,7 @@ from odoo import models, fields, api
 class Test_AccountMoveData(models.Model):
     _inherit = 'account.move'
 
-    channel_order_no. = fields.Float(string = 'Channel Order No.',readonly=True, tracking=True)
+    channel_order_no = fields.Float(string = 'Channel Order No.',readonly=True, tracking=True)
 
 
 class Test_SaleOrderLine(models.Model):

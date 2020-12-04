@@ -18,7 +18,7 @@
         <field name="model">account.move</field >
         <field name="arch" type= "xml">
                <field name="payment_reference" position = "after" >
-                    <field name="channel_order_no."/>     
+                    <field name="channel_order_no"/>     
                 </field>
         </field>
     </record>
