@@ -51,7 +51,7 @@ class Test_SaleOrder(models.Model):
             'invoice_payment_term_id': self.payment_term_id.id,
             'payment_reference': self.reference,
             'transaction_ids': [(6, 0, self.transaction_ids.ids)],
-            'invoice_line_ids': [],
+            'invoice_line_ids': ['invoice_seller_discount':self.seller_discount],
             'company_id': self.company_id.id,
         }
         return invoice_vals
