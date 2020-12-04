@@ -5,7 +5,18 @@ class Test_AccountMove(models.Model):
     _inherit = 'account.move'
 
     channel_order_no = fields.Float(string = 'Channel Order No.',readonly=True, tracking=True)
+"""
+    @api.depends('line_ids.price_unit', 'line_ids.invoice_seller_discount','line_ids.quantity')
+    def _cal_total_seller_discount(self):
+        for order in self:
+            cal_seller_discount = 0
+            for line_items in order.line_ids:
+                cal_seller_discount = cal_seller_discount + (line_items.quantity * line_items.price_unit * line_items.invoice_seller_discount) / 100
+            order.calculated_seller_discount = cal_seller_discount
+        
 
+    calculated_seller_discount = fields.Float(string = 'Total Seller Discount', compute = '_cal_total_seller_discount', store = True, digits=(12,4))
+"""
 class Test_AccountMoveLine(models.Model):
     _name = "account.move.line"
 
