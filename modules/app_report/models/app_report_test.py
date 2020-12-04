@@ -20,13 +20,13 @@ class Test_AccountMove(models.Model):
 class Test_AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
-    invoice_seller_discount = fields.Float(string = 'Seller Discount')    
+    invoice_seller_discount = fields.Float(string = 'Seller Discount',readonly=True)    
 
 
 class Test_SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
-    seller_discount = fields.Float(string = 'Seller Discount',readonly=True)
+    seller_discount = fields.Float(string = 'Seller Discount')
 
 
 class Test_SaleOrder(models.Model):
