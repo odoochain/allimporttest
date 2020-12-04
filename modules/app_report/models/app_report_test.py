@@ -31,6 +31,7 @@ class Test_SaleOrderLine(models.Model):
 
 class Test_SaleOrder(models.Model):
     _inherit = 'sale.order'
+    line_items = fields.One2many('sale.order.line', 'order_id', string='Order Lines Items')
 
     def _prepare_invoice(self):
         
@@ -42,6 +43,18 @@ class Test_SaleOrder(models.Model):
         journal = self.env['account.move'].with_context(default_move_type='out_invoice')._get_default_journal()
         if not journal:
             raise UserError(_('Please define an accounting sales journal for the company %s (%s).') % (self.company_id.name, self.company_id.id))
+
+        line_items_vals = []
+        for line in self.line_items:
+            line_items_vals.append({
+                'invoice_seller_discount': self.seller_discount,
+                'price_subtotal': self.price_subtotal,
+                'label': self.name,
+                'price_unit': self.price_unit,
+                'quantity': self.product_uom_qty,
+                'discount': self.discount,
+                'product_id': self.product_id.id,
+            })
 
         invoice_vals = {
             'ref': self.client_order_ref or '',
@@ -62,15 +75,7 @@ class Test_SaleOrder(models.Model):
             'invoice_payment_term_id': self.payment_term_id.id,
             'payment_reference': self.reference,
             'transaction_ids': [(6, 0, self.transaction_ids.ids)],
-            'invoice_line_ids': [(0, 0, {
-                'invoice_seller_discount': self.seller_discount,
-                'price_subtotal': self.price_subtotal,
-                'label': self.name,
-                'price_unit': self.price_unit,
-                'quantity': self.product_uom_qty,
-                'discount': self.discount,
-                'product_id': self.product_id.id,
-            })],
+            'invoice_line_ids': [(0, 0, order_line) for order_line in line_items_vals],
             'company_id': self.company_id.id,
         }
         return invoice_vals
