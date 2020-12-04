@@ -172,12 +172,12 @@
 										</t>
 									</td>
 								</tr>
-								<tr class="border-black o_source_ids">
+								<tr class="border-black o_invoice_origin">
 									<td><strong>Source Document</strong></td>
 									<td class="text-right">
 										
 											<t t-esc="o.invoice_origin" />
-										</t>
+										
 									</td>
 								</tr>
 
