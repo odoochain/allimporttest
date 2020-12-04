@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>       
+        
+        <report 
+            id="custom_report_without_prices"
+            model="account.invoice"
+            string="Invoice without prices"
+            report_type="qweb-pdf"
+            name="app_report.report_without_prices"
+            attachment_use="False"
+            file="app_report.report_without_prices"/>
+
+</odoo>            
