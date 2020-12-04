@@ -31,7 +31,7 @@ class Test_SaleOrderLine(models.Model):
 
 class Test_SaleOrder(models.Model):
     _inherit = 'sale.order'
-"""
+
     def _prepare_invoice(self):
         
         #Prepare the dict of values to create the new invoice for a sales order. This method may be
@@ -66,7 +66,7 @@ class Test_SaleOrder(models.Model):
             'company_id': self.company_id.id,
         }
         return invoice_vals
-"""
+
     
 
 
