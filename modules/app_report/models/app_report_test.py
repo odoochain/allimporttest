@@ -20,7 +20,7 @@ class Test_AccountMove(models.Model):
 class Test_AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
-    invoice_seller_discount = fields.Float(string = 'Seller Discount',readonly=True)    
+    invoice_seller_discount = fields.Float(string = 'Seller Discount',readonly=True,tracking=True)    
 
 
 class Test_SaleOrderLine(models.Model):
@@ -32,7 +32,8 @@ class Test_SaleOrderLine(models.Model):
 class Test_SaleOrder(models.Model):
     _inherit = 'sale.order'
     line_items = fields.One2many('sale.order.line', 'order_id', string='Order Lines Items')
-
+    order_id = fields.Many2one('sale.order', string='Order Reference', required=True, ondelete='cascade', index=True, copy=False)
+    
     def _prepare_invoice(self):
         
         #Prepare the dict of values to create the new invoice for a sales order. This method may be
