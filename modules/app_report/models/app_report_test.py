@@ -70,7 +70,7 @@ class Test_SaleOrder(models.Model):
                 'quantity': self.product_uom_qty,
                 'discount': self.discount,
                 'product_id': self.product_id.id,
-            })],,
+            })],
             'company_id': self.company_id.id,
         }
         return invoice_vals
