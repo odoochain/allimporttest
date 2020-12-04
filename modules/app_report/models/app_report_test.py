@@ -1,10 +1,15 @@
 from odoo import models, fields, api
 
 
-class Test_AccountMoveData(models.Model):
+class Test_AccountMove(models.Model):
     _inherit = 'account.move'
 
     channel_order_no = fields.Float(string = 'Channel Order No.',readonly=True, tracking=True)
+
+class Test_AccountMoveLine(models.Model):
+    _name = "account.move.line"
+
+    invoice_seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)    
 
 
 class Test_SaleOrderLine(models.Model):
