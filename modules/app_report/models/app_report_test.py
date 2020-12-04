@@ -17,11 +17,11 @@ class Test_SaleOrder(models.Model):
     _inherit = 'sale.order'
 """
     def _prepare_invoice(self):
-        """
+        
         #Prepare the dict of values to create the new invoice for a sales order. This method may be
         #overridden to implement custom invoice generation (making sure to call super() to establish
         #a clean extension chain).
-        """
+        
         self.ensure_one()
         journal = self.env['account.move'].with_context(default_move_type='out_invoice')._get_default_journal()
         if not journal:
