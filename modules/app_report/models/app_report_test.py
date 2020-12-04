@@ -4,7 +4,7 @@ from odoo import models, fields, api
 class Test_AccountMove(models.Model):
     _inherit = 'account.move'
 
-    channel_order_no = fields.Float(string = 'Channel Order No.',readonly=True, tracking=True)
+    channel_order_no = fields.Float(string = 'Channel Order No.', readonly=True , tracking=True)
 """
     @api.depends('line_ids.price_unit', 'line_ids.invoice_seller_discount','line_ids.quantity')
     def _cal_total_seller_discount(self):
