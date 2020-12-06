@@ -81,7 +81,7 @@
 
                                     <div class="col-9 bm-2 text-right" >
 									    
-										<strong style="font-size:10px">เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
+										<strong style="font-size:10px">เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.channel_order_number"/>
 									</div>
                                 </div>
 					</div>
