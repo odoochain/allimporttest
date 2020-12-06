@@ -7,7 +7,8 @@ class Test_AccountMove(models.Model):
     channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
 
     def action_invoice(self):
-    	return self.env['report'].get_action(self, 'app_report.report_tax_invoice')
+        return self.env.ref('app_report.report_tax_invoice').report_action(self)
+    	#return self.env['report'].get_action(self, 'app_report.report_tax_invoice')
 """
     @api.depends('line_ids.price_unit', 'line_ids.invoice_seller_discount','line_ids.quantity')
     def _cal_total_seller_discount(self):
