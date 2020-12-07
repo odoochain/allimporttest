@@ -9,6 +9,8 @@
 	   report_type="qweb-pdf"
 	   name="app_report.report_tax_invoice1"
 	   file="app_report.report_tax_invoice1"
-	   attachment_use="True" />
+	   attachment_use="True"
+	   attachment="(object.state in ('open','paid')) and
+        ('INV'+(object.number or '').replace('/','')+'.pdf')" />
 	   
 </odoo>
