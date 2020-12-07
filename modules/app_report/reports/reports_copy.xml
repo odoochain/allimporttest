@@ -7,8 +7,8 @@
 	   model="account.move"
 	   string="Tax Invoice Copy"
 	   report_type="qweb-pdf"
-	   name=["app_report.report_tax_invoice_copy","app_report.report_tax_invoice"]
-	   file=["app_report.report_tax_invoice_copy","app_report.report_tax_invoice"]
+	   name="app_report.report_tax_invoice_copy"
+	   file="app_report.report_tax_invoice_copy"
 	   attachment_use="True" />
 	   
 </odoo>
