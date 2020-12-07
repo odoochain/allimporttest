@@ -132,39 +132,34 @@
 					</div>
 				<div class = "row">
 				<div class="col-12 bm-2 text-left">
-					<strong style="font-size:10px">Ref::Oder No.</strong> <t t-esc="o.channel_order_number"/>
+					<strong style="font-size:14px">Ref::Order No.</strong> <t t-esc="o.channel_order_number"/>
 					
                 </div>
-			</div>
+				</div>
 				<div class="clearfix">
 					<div id="total" class="row">
 						<div t-attf-class="#{'col-5' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
 							<table class="table table-sm">
-                            <div class="row">
-							<div class="col-xs-6 text-right">
 								<tr class="border-black o_price_subtotal" style="">
 									<td><strong>ผลรวมทั้งสิ้น / Grand Total</strong></td>
 									<td class="text-right">
-										<span t-field="o.amount_untaxed"/>
+										<span t-field="o.grand_total"/>
 									</td>
-								</tr> 
-							</div>
-							<div class="col-xs-6 text-left">	
-								<tr class="border-black o_channel_order_number" style="">
-									<td><strong>Ref:: Order No.</strong></td>
-									<td class="text-left">
-										<span t-field="o.channel_order_number"/>
-									</td>
-								</tr> 
-							</div>	
-								</div>    
-								<!--<tr class="border-black o_">
-								<td><strong>Discount</strong></td>
+								</tr>
+								    
+								<tr class="border-black o_calculated_discount">
+								<td><strong>ส่วนลด / Discount</strong></td>
 								<td class="text-right">
-									<span t-field="o.discount"/>
+									<span t-field="o.calculated_discount"/>
 								</td>
-								
-								</tr>-->
+								</tr>
+
+								<tr class="border-black o_total_baht_excl_VAT">
+								<td><strong>รวมบาทไม่รวม ภาษีมูลค่าเพิ่ม / Total Baht Excl. Vat</strong></td>
+								<td class="text-right">
+									<span t-field="o.total_baht_excl_VAT"/>
+								</td>	
+								</tr>
 								<!--<tr class="border-black o_discount_subtotal">
 									<td><strong>รวมบาทไม่รวม ภาษีมูลค่าเพิ่ม / <br></br>Total Baht Excl. VAT</strong></td>
 									<td class="text-right">
@@ -172,35 +167,18 @@
 									</td>
 								</tr>-->
 
-								<tr class="border-black o_amount_tax" style="max-height:85px; max-width:65px">
+								<tr class="border-black o_amount_tax">
 									<td><strong>ภาษีมูลค่าเพิ่ม 7% / VAT 7%</strong></td>
 									<td class="text-right">
-										<span t-field="o.amount_tax"/>
+										<span t-field="o.vat"/>
 									</td>
 								</tr>
 
-								<tr class="border-black o_line_ids">
-									<td><strong>ส่วนลด / Discount</strong></td>
-									<td class="text-right">
-										<t t-foreach = "o.invoice_line_ids" t-as = "line">
-											<t t-esc="line.discount" />
-										</t>
-									</td>
-								</tr>
 
-								<!--<tr class="border-black o_invoice_origin">
-									<td><strong>Source Document</strong></td>
+								<tr class="border-black o_total_baht_incl_VAT">
+									<td><strong>รวมบาท ภาษีมูลค่าเพิ่ม / Total Baht Incl. VAT</strong></td>
 									<td class="text-right">
-										
-											<t t-esc="o.invoice_origin" />
-										
-									</td>
-								</tr>-->
-
-								<tr class="border-black o_amount_total">
-									<td><strong>รวมบาท ภาษีมูลค่าเพิ่ม / <br></br>Total Baht Incl. VAT</strong></td>
-									<td class="text-right">
-										<span t-field="o.amount_total"/>
+										<span t-field="o.total_baht_incl_VAT"/>
 									</td>
 								</tr>
 
@@ -223,8 +201,5 @@
 
 	</t>
 </template>
-
-	
-
 
 </odoo>
