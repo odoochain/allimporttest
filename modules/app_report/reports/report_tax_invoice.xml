@@ -132,7 +132,7 @@
 					</div>
 				<div class = "row">
 				<div class="col-12 bm-2 text-left">
-					<strong style="font-size:15px">Ref::Order No.</strong> <t t-esc="o.channel_order_number"/>
+					<strong style="font-size:12px">Ref::Order No.</strong> <t t-esc="o.channel_order_number"/>
 					
                 </div>
 				</div>
@@ -146,12 +146,7 @@
 										<span t-field="o.grand_total"/>
 									</td>
 								</tr>
-								<tr class="border-black o_price_subtotal" style="">
-									<td><strong>Ref:: Order No.</strong></td>
-									<td class="text-left">
-										<span t-field="o.channel_order_number"/>
-									</td>
-								</tr>       
+								    
 								<tr class="border-black o_calculated_discount">
 								<td><strong>ส่วนลด / Discount</strong></td>
 								<td class="text-right">
