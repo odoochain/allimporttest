@@ -79,7 +79,7 @@
 
                                     <div class="col-9 bm-2 text-right" >
 									    
-										<strong style="font-size:10px">เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.channel_order_number"/>
+										<strong style="font-size:10px">เลขที่ใบแจ้งหนี้ / Invoice No:</strong> <t t-esc="o.name"/>
 									</div>
                                 </div>
 					</div>
@@ -140,7 +140,13 @@
 									<td class="text-right">
 										<span t-field="o.grand_total"/>
 									</td>
-								</tr>     
+								</tr>
+								<tr class="border-black o_price_subtotal" style="">
+									<td><strong>Ref:: Order No.</strong></td>
+									<td class="text-left">
+										<span t-field="o.channel_order_number"/>
+									</td>
+								</tr>       
 								<tr class="border-black o_calculated_discount">
 								<td><strong>ส่วนลด / Discount</strong></td>
 								<td class="text-right">
