@@ -9,10 +9,6 @@ class SaleOrder_Data(models.Model):
 
     def _prepare_invoice(self):
         
-        #Prepare the dict of values to create the new invoice for a sales order. This method may be
-        #overridden to implement custom invoice generation (making sure to call super() to establish
-        #a clean extension chain).
-        
         self.ensure_one()
         journal = self.env['account.move'].with_context(default_move_type='out_invoice')._get_default_journal()
         if not journal:
@@ -43,19 +39,52 @@ class SaleOrder_Data(models.Model):
         }
         return invoice_vals
 
+    def _prepare_invoice_line(self, **optional_values):
+        """
+        Prepare the dict of values to create the new invoice line for a sales order line.
+
+        :param qty: float quantity to invoice
+        :param optional_values: any parameter that should be added to the returned invoice line
+        """
+        self.ensure_one()
+        res = {
+            'display_type': self.display_type,
+            'sequence': self.sequence,
+            'name': self.name,
+            'product_id': self.product_id.id,
+            'product_uom_id': self.product_uom.id,
+            'quantity': self.qty_to_invoice,
+            'discount': self.discount,
+            'seller_discount': self.seller_discount,
+            'price_unit': self.price_unit,
+            'tax_ids': [(6, 0, self.tax_id.ids)],
+            'analytic_account_id': self.order_id.analytic_account_id.id,
+            'analytic_tag_ids': [(6, 0, self.analytic_tag_ids.ids)],
+            'sale_line_ids': [(4, self.id)],
+        }
+        if optional_values:
+            res.update(optional_values)
+        if self.display_type:
+            res['account_id'] = False
+        return res
+
+class SaleOrderLine(models.Model):
+    _inherit = 'sale.order.line'
+    seller_discount = fields.Float(string='Seller Discount')
+
 class AccountMove_Data(models.Model):
     _inherit = 'account.move'
 
-    seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)
+    # seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)
 
     channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
     
-    @api.depends('line_ids.price_unit', 'line_ids.discount','line_ids.quantity')
+    @api.depends('line_ids.price_unit', 'line_ids.seller_discount','line_ids.quantity')
     def _cal_total_discount(self):
         for order in self:
             cal_discount = 0
             for line_items in order.line_ids:
-                cal_discount = cal_discount + (line_items.quantity * line_items.price_unit * line_items.discount) / 100
+                cal_discount = cal_discount + (line_items.quantity * line_items.price_unit * line_items.seller_discount) / 100
             order.calculated_discount = cal_discount
         
 
@@ -95,5 +124,5 @@ class AccountMove_Data(models.Model):
 
 class AccountMove_Line_Data(models.Model):
     _inherit = 'account.move.line'
-    move_line_id = fields.Many2one('account.move', string='Move Id')
+    seller_discount = fields.Float('seller_discount')
 
