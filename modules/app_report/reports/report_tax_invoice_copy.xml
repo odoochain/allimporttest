@@ -210,7 +210,7 @@
 	</t>
 </template>
 
-	<template id="report_tax_invoice">
+<template id="app_report.report_tax_invoice">
 	
 	    <div class="header">
             <div class="row">
