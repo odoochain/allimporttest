@@ -202,11 +202,7 @@
 </template>
 
 
-        <template id="report_invoice" inherit_id="app_report.report_tax_invoice">
-            <xpath expr="//t[@t-foreach='doc_ids']" position="after">
-                <t t-raw="translate_doc(doc_id, doc_model, 'partner_id.lang', 'app_report.report_tax_invoice_copy.app_report.report_tax_invoice')"/>
-            </xpath>
-        </template>
+
     
 
 </odoo>
