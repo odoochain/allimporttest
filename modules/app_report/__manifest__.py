@@ -11,6 +11,8 @@
         #'data/data.xml',
         'reports/report_tax_invoice.xml',
         'reports/reports.xml',
+        'reports/report_tax_invoice_copy.xml',
+        'reports/reports_copy.xml',
         #'views/account_report.xml',
         #'views/report_without_prices.xml',
         'views/app_report_testview.xml'
