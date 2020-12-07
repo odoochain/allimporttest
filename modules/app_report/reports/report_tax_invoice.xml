@@ -135,13 +135,14 @@
 					<div id="total" class="row">
 						<div t-attf-class="#{'col-5' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
 							<table class="table table-sm">
+
 								<tr class="border-black o_price_subtotal" style="">
 									<td><strong>ผลรวมทั้งสิ้น / Grand Total</strong></td>
-									<td class="text-right">
+									<td class="text-left">
 										<span t-field="o.amount_untaxed"/>
 									</td>
 								</tr> 
-								<tr class="border-black o_price_subtotal" style="">
+								<tr class="border-black o_channel_order_number" style="">
 									<td><strong>Ref:: Order No.</strong></td>
 									<td class="text-left">
 										<span t-field="o.channel_order_number"/>
