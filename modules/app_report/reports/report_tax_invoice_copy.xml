@@ -58,7 +58,7 @@
 						<br></br>
 					    </div>
 				    </div>-->
-<div style="background-image: url('app_report/static/description/duplicate.gif');">
+<div style="background-image: url('app_report/static/description/duplicate.gif');background-position:center;background-repeat:no-repeat;">
 
 				
 					<div class="page">
@@ -186,7 +186,7 @@
 						</div>
 					</div>
 				</div>
-</div>
+</div>  <!--closer of background image-->
 				<div class="footer">
                     <div class="text-right" style="border-top: 1px solid black;">        
                         <small>
