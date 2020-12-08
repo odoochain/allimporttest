@@ -4,6 +4,7 @@
 <t t-call="web.html_container">
         <t t-foreach="docs" t-as="doc">
 		    <t t-call="app_report.report_tax_invoice"/>
+			<p style="page-break-before:always;"> </p>
             <t t-call="app_report.report_tax_invoice_copy"/>
         </t>
         
