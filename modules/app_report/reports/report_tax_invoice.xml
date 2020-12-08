@@ -4,7 +4,7 @@
 <template id="report_tax_invoice1">
             <t t-call="app_report.report_tax_invoice" />
 
-            <t t-call="app_report.report_tax_invoice_copy"/>
+            <t t-call="app_report.report_tax_invoice_copy">
 						<div>
 				    <div class="header">
             <div class="row">
@@ -42,6 +42,7 @@
 		</div>		
 	<br></br><br></br><br></br>
 </div>
+</t>
 
 </template>
  
