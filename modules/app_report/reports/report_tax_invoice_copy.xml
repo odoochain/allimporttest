@@ -35,7 +35,7 @@
                     <t t-esc="address.with_context({'lang': 'th_TH'})"/>
 					</t>-->
 					<t t-call="web.external_layout">
-			<t t-set="doc" t-value="doc.partner_id.lang" />
+			<t t-set="doc" t-lang="doc.partner_id.lang" />
                    <t t-set="address">
                         <div t-field="doc.partner_id"
                             t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
