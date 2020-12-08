@@ -3,7 +3,9 @@
 <!--main template which calls "Tax Invoice" and "Tax Invoice-Copy" templates.-->
 <template id="report_tax_invoice1">
             <t t-call="app_report.report_tax_invoice" />
-			<div>
+
+            <t t-call="app_report.report_tax_invoice_copy"/>
+						<div>
 				    <div class="header">
             <div class="row">
                 <div class="col-3 bm-2 text-left">
@@ -41,7 +43,6 @@
 	<br></br><br></br><br></br>
 </div>
 
-            <t t-call="app_report.report_tax_invoice_copy"/>
 </template>
  
 <template id="report_tax_invoice">
