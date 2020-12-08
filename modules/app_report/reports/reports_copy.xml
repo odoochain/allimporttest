@@ -5,7 +5,7 @@
 <report
        id="report_tax_invoice_copy"
 	   model="account.move"
-	   string="Tax Invoice Copy"
+	   string="Tax Invoice-Copy"
 	   report_type="qweb-pdf"
 	   name="app_report.report_tax_invoice_copy"
 	   file="app_report.report_tax_invoice_copy"
