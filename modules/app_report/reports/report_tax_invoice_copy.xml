@@ -7,6 +7,13 @@
 	    <div class="header">
             <div class="row">
                 <div class="col-3 bm-2 text-left">
+				<!--<small><strong>Crea Trading Co.,Ltd.(Head Office)</strong><br></br>
+				   712/1 TBI Building, 6th Floor<br></br>
+				   Soi Sukhumvit 26 and 28, Khlon Ton,<br></br>
+				   Khlong Toei, Bangkok,<br></br>
+				   Thailand 10110</small>
+                </div>-->
+				
                     <t t-foreach="docs" t-as="o">
 					<h5>
 					<t t-esc="o.partner_id" t-options='{"widget": "contact", "fields": [ "address"], "no_marker": True, "phone_icons": True}'/>

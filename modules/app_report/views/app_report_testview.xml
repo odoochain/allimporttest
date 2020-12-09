@@ -18,4 +18,13 @@
                 </field>
         </field>
     </record> -->
+    <record id= "app_report_base.view_partner_form" model= "ir.ui.view">
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="model">res.partner</field >
+        <field name="arch" type= "xml">
+               <field name="vat" position = "after" >
+                    <field name="address_in_thai"/>   
+                </field>
+        </field>
+    </record>
 </odoo>
