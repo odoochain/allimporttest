@@ -24,11 +24,11 @@
                 </div>
                 <br></br>
                 <div class="col-3 bm-2 text-right">
-                    <!--<small><strong>บริษัท ครีเอเทรดดิ้ง จำกัด (สำนักงานใหญ่)</strong><br></br>
+                    <small><strong>บริษัท ครีเอเทรดดิ้ง จำกัด (สำนักงานใหญ่)</strong><br></br>
 				    712/1 อาคาร TBI ชั้น 6 <br></br>
 				    ซ. สุขุมวิท 26 และ 28 คลองต้น <br></br>
 				    คลองเตยกรุงเทพมหานคร <br></br>
-				    ประเทศไทย 10110 </small>-->
+				    ประเทศไทย 10110 </small>
 
 					<!--<t t-foreach="docs" t-as="o">
 					<t t-set="address" t-value ="o.partner_id" t-options='{"widget": "contact", "fields": [ "address"], "no_marker": True, "phone_icons": True}'/>
@@ -43,9 +43,7 @@
                             <p t-if="doc.partner_id.vat"><t t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="doc.partner_id.vat"/></p>
                     </t>
 	                 </t>-->
-                    <t t-foreach="docs" t-as="o">
-					 <t t-esc="o.x_studio_address_thai_4"/>
-                    </t>
+                    
     
 					
 
