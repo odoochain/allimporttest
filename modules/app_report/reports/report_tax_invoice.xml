@@ -49,9 +49,9 @@
 					<h5>
 					     <t t-esc="o.address_in_thai"/>
 						 <strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.partner_id.vat"/>
-					<h5>	 
+					</h5>	 
 					</t>
-					
+
                 </div>
 			</div>
 			<div class = "row">
