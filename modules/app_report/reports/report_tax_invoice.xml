@@ -48,6 +48,7 @@
 					<t t-foreach="docs" t-as="o">
 					<h5>
 					     <t t-esc="o.partner_id.address_in_thai"/>
+						 <br></br>
 						 <strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.partner_id.vat"/>
 					</h5>	 
 					</t>
