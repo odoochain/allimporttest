@@ -78,7 +78,7 @@ class AccountMove_Data(models.Model):
     # seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)
 
     channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
-    adddress_in_thai =  fields.Text(string = 'Address (Thai)', tracking=True)
+    address_in_thai =  fields.Text(string = 'Address (Thai)', tracking=True)
     
     @api.depends('line_ids.price_unit', 'line_ids.seller_discount','line_ids.quantity')
     def _cal_total_discount(self):
@@ -120,9 +120,6 @@ class AccountMove_Data(models.Model):
     vat = fields.Float(string = 'Vat', compute = '_cal_total_vat', store = True, digits=(12,4))
 
     
-
-
-
 class AccountMove_Line_Data(models.Model):
     _inherit = 'account.move.line'
     seller_discount = fields.Float('seller_discount')
@@ -130,5 +127,5 @@ class AccountMove_Line_Data(models.Model):
 class ResPartner_Data(models.Model):
     _inherit = 'res.partner'
 
-    adddress_in_thai =  fields.Text(string = 'Address (Thai)')    
+    address_in_thai =  fields.Text(string = 'Address (Thai)')    
 
