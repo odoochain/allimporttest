@@ -129,5 +129,5 @@ class AccountMove_Line_Data(models.Model):
 class ResPartner_Data(models.Model):
     _inherit = 'res.partner'
 
-    adddress_in_thai =  = fields.Text(string = 'Address (Thai)')    
+    adddress_in_thai =  fields.Text(string = 'Address (Thai)')    
 
