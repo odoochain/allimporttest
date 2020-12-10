@@ -24,9 +24,12 @@
 
 				   <t t-foreach="docs" t-as="o">
 					<small>
-					<t t-esc="o.company_id.street"/>
-					<t t-esc="o.company_id.street2"/>
-					
+					<t t-esc="o.company_id.street"/><br></br>
+					<t t-esc="o.company_id.street2"/><br></br>
+					<t t-esc="o.company_id.city"/>
+					<t t-esc="o.company_id.state_id"/><br></br>
+					<t t-esc="o.company_id.county_id"/><br></br>
+					<br></br>
 					<strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.company_id.vat"/>
 					</small>
 					</t>
@@ -49,9 +52,9 @@
 
 					<t t-foreach="docs" t-as="o">
 					<small>
-					     <t t-esc="o.partner_id.address_local_lang"/>
+					     <t t-esc="o.company_id.address_local_lang"/>
 						 <br></br><br></br>
-						 <strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.partner_id.vat"/>
+						 <strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.company_id.vat"/>
 					</small>	 
 					</t>
 

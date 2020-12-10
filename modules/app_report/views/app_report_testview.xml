@@ -27,4 +27,14 @@
                 </field>
         </field>
     </record>
+    <record id= "app_report_base_view_company_form" model= "ir.ui.view">
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="model">res.company</field >
+        <field name="arch" type= "xml">
+               <field name="phone" position = "before" >
+                    <field name="address_local_lang"/>   
+                </field>
+        </field>
+    </record>
+
 </odoo>

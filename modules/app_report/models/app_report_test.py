@@ -127,5 +127,10 @@ class AccountMove_Line_Data(models.Model):
 class ResPartner_Data(models.Model):
     _inherit = 'res.partner'
 
-    address_local_lang =  fields.Text(string = 'Address (Thai)')    
+    address_local_lang =  fields.Text(string = 'Address (Thai)')
+
+class ResPartner_Data(models.Model):
+    _inherit = 'res.company'
+
+    address_local_lang =  fields.Text(string = 'Address(Thai)')        
 
