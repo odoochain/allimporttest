@@ -24,7 +24,9 @@
 
 				   <t t-foreach="docs" t-as="o">
 					<small>
-					<!--<t t-esc="o.company_id" t-options='{"widget": "contact", "fields": [ "name","address"]}'/>-->
+					<t t-esc="o.company_id.street"/>
+					<t t-esc="o.company_id.street2"/>
+					
 					<strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.company_id.vat"/>
 					</small>
 					</t>
