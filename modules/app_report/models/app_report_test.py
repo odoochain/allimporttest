@@ -5,7 +5,7 @@ from odoo import models, fields, api
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
 
-    channel_order_number = fields.Char(string = 'Channel Order No.')
+    #channel_order_number = fields.Char(string = 'Channel Order No.')
 
     def _prepare_invoice(self):
         
@@ -77,7 +77,7 @@ class AccountMove_Data(models.Model):
 
     # seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)
 
-    channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
+    #channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
     address_local_lang =  fields.Text(string = 'Address (Thai)', tracking=True,readonly=True)
     
     @api.depends('line_ids.price_unit', 'line_ids.seller_discount','line_ids.quantity')
