@@ -124,10 +124,7 @@ class AccountMove_Line_Data(models.Model):
     _inherit = 'account.move.line'
     seller_discount = fields.Float('seller_discount')
 
-class ResPartner_Data(models.Model):
-    _inherit = 'res.partner'
 
-    address_local_lang =  fields.Text(string = 'Address (Thai)')
 
 class ResPartner_Data(models.Model):
     _inherit = 'res.company'
