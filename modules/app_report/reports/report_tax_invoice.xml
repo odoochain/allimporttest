@@ -47,7 +47,7 @@
 
 					<t t-foreach="docs" t-as="o">
 					<small>
-					     <t t-esc="o.address_local_lang"/>
+					     <t t-esc="o.partner_id.address_local_lang"/>
 						 <br></br><br></br>
 						 <strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.partner_id.vat"/>
 					</small>	 
