@@ -26,9 +26,8 @@
 					<small>
 					<t t-esc="o.company_id.street"/><br></br>
 					<t t-esc="o.company_id.street2"/><br></br>
-					<t t-esc="o.company_id.city"/>
-					
-					<br></br>
+					<t t-esc="o.company_id.city"/><br></br>
+					<t t-esc="o.company_id.zip"/><br></br>
 					<strong style="font-size:15px">Tax ID :</strong> <t t-esc="o.company_id.vat"/>
 					</small>
 					</t>
