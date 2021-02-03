@@ -5,7 +5,7 @@ from odoo import models, fields, api
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
 
-    #channel_order_number = fields.Char(string = 'Channel Order No.')
+    channel_order_number = fields.Char(string = 'Channel O No.')
 
     def _prepare_invoice(self):
         
