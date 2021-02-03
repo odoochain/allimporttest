@@ -70,7 +70,8 @@ class SaleOrder_Data(models.Model):
 
 class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
-    seller_discount = fields.Float(string='Seller Discountsss')
+    seller_discount = fields.Float(string='Seller Discount')
+    seller_SellingPrice = fields.Float(string='Seller SellingPrice')
 
 class AccountMove_Data(models.Model):
     _inherit = 'account.move'
