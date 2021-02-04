@@ -8,7 +8,7 @@
                     <field name="channel_order_number"/>   
                 </field>
                 <field name="date_order" position = "after" >
-                    <field name="channel_order_number1"/>   
+                    <field name="channel_order_number11"/>   
                 </field>
         </field>
     </record>
