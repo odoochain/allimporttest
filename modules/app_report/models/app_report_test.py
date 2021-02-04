@@ -7,6 +7,7 @@ class SaleOrder_Data(models.Model):
     #description = fields.Char(string='Description')
 
     channel_order_number = fields.Char(string = 'Channel Order No.')
+    payment_amount = fields.Char(string = 'Payment Amount')
 
     def _prepare_invoice(self):
         
