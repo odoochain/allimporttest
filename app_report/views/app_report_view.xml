@@ -8,7 +8,8 @@
                     <field name="channel_order_number"/>   
                 </field>
                 <field name="payment_term_id" position = "after" >
-                    <field name="payment_type"/>   
+                    <field name="payment_type"/> 
+                    <field name="description_1"/>   
                 </field>
         </field>
     </record>
