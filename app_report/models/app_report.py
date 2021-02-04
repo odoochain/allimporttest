@@ -6,6 +6,7 @@ class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
 
     channel_order_number = fields.Char(string = 'Channel Order')
+    channel_order_number1 = fields.Char(string = 'Channel Order1')
     
     
 
