@@ -4,6 +4,7 @@ from odoo import models, fields, api
 
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
+    description = fields.Char(string='Description')
 
     #channel_order_number = fields.Char(string = 'Channel Order No.')
 
@@ -71,7 +72,7 @@ class SaleOrder_Data(models.Model):
 class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
     seller_discount = fields.Float(string='Seller Discount')
-    seller_SellingPrice = fields.Float(string='Seller SellingPrice')
+    
 
 class AccountMove_Data(models.Model):
     _inherit = 'account.move'
