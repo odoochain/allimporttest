@@ -34,7 +34,7 @@
         <field name="inherit_id" ref="sales.view_order_form"/>
         <field name="model">sale.order</field >
         <field name="arch" type= "xml">
-               <field name="confirmation_date" position = "after" >
+               <field name="date_order" position = "after" >
                     <field name="description"/>   
                 </field>
         </field>
