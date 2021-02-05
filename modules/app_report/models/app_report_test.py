@@ -141,16 +141,16 @@ class ResPartner_Data(models.Model):
     address_local_lang =  fields.Text(string = 'Address(Thai)')        
 
 
-class Feedback(models.Model):
-    _name = "feedback"
-    name1 = fields.Integer(string="Subject")
-    name2 = fields.Integer(string="Description")
-    total = fields.Integer(string="total")
+#class Feedback(models.Model):
+#    _name = "feedback"
+#    name1 = fields.Integer(string="Subject")
+#    name2 = fields.Integer(string="Description")
+#    total = fields.Integer(string="total")
+#
+#    @api.multi
+#    @api.depends('name1','name2')
+#    def get_total(self):
+#        self.total = self.name1 + self.name2
+#        print"======self.total==========",self.total
 
-    @api.multi
-    @api.depends('name1','name2')
-    def get_total(self):
-        self.total = self.name1 + self.name2
-        print"======self.total==========",self.total
-
-Feedback()
+#Feedback()
