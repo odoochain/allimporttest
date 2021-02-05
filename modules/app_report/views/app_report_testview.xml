@@ -12,6 +12,16 @@
                     <field name="payment_amount"/> 
                       
                 </field>
+
+        <form string="Feedback">
+                    <group>
+                        <field name="name1" />
+                        <field name="name2" />
+                        <field name="total" />
+                        <button type="object" name="get_total"   string="Calculate Total"/>
+                    </group>
+                </form>
+                
         </field>
     </record>
     <!--<record id= "app_report_view_move_form_view" model= "ir.ui.view">
