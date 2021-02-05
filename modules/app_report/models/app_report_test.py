@@ -8,6 +8,16 @@ class SaleOrder_Data(models.Model):
 
     channel_order_number = fields.Char(string = 'Channel Order No.')
     payment_amount = fields.Char(string = 'Payment Amount')
+    name1 = fields.Integer(string="Subject")
+    name2 = fields.Integer(string="Description")
+    total = fields.Integer(string="total")
+
+    @api.multi
+    @api.depends('name1','name2')
+    def get_total(self):
+        self.total = self.name1 + self.name2
+        print"======self.total==========",self.total
+        
 
     def _prepare_invoice(self):
         
