@@ -9,7 +9,9 @@
                 </field>
                 <field name="payment_term_id" position = "after" >
                     <field name="payment_type"/> 
-                    <field name="description_1"/>   
+                    <field name="description_1"/>
+                    <field name= "Dealer_Discount"/> 
+
                 </field>
         </field>
     </record>
