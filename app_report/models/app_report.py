@@ -8,7 +8,7 @@ class SaleOrder_Data(models.Model):
     channel_order_number = fields.Char(string = 'Channel Order')
     payment_type = fields.Char(string = 'Payment Type')
     description_1 = fields.Char(string = 'Description 1')
-    # dealer_discount = fields.char(string = 'Dealer Discount')
+    dealer_discount = fields.Char(string = 'Dealer Discount')
     
     
 
