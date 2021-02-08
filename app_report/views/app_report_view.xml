@@ -10,7 +10,7 @@
                 <field name="payment_term_id" position = "after" >
                     <field name="payment_type"/> 
                     <field name="description_1"/>
-                    <field name= "Dealer_Discount"/> 
+                    <field name= "Dealer_Discount1"/> 
 
                 </field>
         </field>
