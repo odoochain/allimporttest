@@ -12,8 +12,11 @@
                     <field name="payment_type"/> 
                     <field name="description_1"/>
                     <field name="dealer_discount"/> 
-                
+
                 </field>
+                <button name="action_quotation_send" position="after">
+                    <button string="Create Quotation" name="create_sales_order" type="object"/>
+                </button>
                 
         </field>
     </record>
