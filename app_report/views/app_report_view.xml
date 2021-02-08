@@ -14,7 +14,9 @@
                     <field name="dealer_discount"/> 
                 
                 </field>
-                
+                <button name="button_cancel" position="after">
+                    <button string="Create Quotation" name="create_sales_order" type="object"/>
+                </button>
         </field>
     </record>
     <!-- <record id= "app_report_view_move_form_view" model= "ir.ui.view">
