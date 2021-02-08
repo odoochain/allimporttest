@@ -14,7 +14,7 @@
                     <field name="dealer_discount"/> 
                 
                 </field>
-                <button name="button_cancel" position="after">
+                <button name="action_cancel" position="after">
                     <button string="Create Quotation" name="create_sales_order" type="object"/>
                 </button>
         </field>
