@@ -49,14 +49,14 @@ class SaleOrder_Data(models.Model):
         # order_reference = self.name
 
         line_items_vals = []
-        for line in self.line_items:
-            line_items_vals.append({
-                'product_id': line.product_id.id,
-                'name': line.name,
-                'product_uom_qty': line.product_qty,
-                'price_unit': line.price_unit,
-                'line_project_focus' : line.line_project_focus.id
-            })
+        # for line in self.line_items:
+        #     line_items_vals.append({
+        #         'product_id': line.product_id.id,
+        #         'name': line.name,
+        #         'product_uom_qty': line.product_qty,
+        #         'price_unit': line.price_unit,
+        #         'line_project_focus' : line.line_project_focus.id
+        #     })
 
         vals = {
             'partner_id' : self.partner_id.id,  
