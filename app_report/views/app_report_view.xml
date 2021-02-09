@@ -16,8 +16,17 @@
                 </field>
                 <button name="action_quotation_send" position="after">
                     <button string="test" name="create_sales_order" type="object"/>
+                    <button type='action' name='action_open_partners' />
                 </button>
          </field>
+    </record>
+
+    <record id="action_open_partners" model="ir.actions.act_window">
+        <field name="name">Partners</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">tree</field><!-- Optional: Show the tree view (default: form) -->
+        <field name="view_mode">tree</field><!-- Optional: Only allow the tree view (default: tree,form) -->
+        <field name="target">new</field><!-- Optional: Open in new tab (default: current) -->
     </record>
 
     
