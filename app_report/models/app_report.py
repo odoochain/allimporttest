@@ -48,7 +48,7 @@ class SaleOrder_Data(models.Model):
     def create_sales_order(self):
         # order_reference = self.name
 
-        line_items_vals = []
+        #line_items_vals = []
         # for line in self.line_items:
         #     line_items_vals.append({
         #         'product_id': line.product_id.id,
@@ -59,7 +59,7 @@ class SaleOrder_Data(models.Model):
         #     })
 
         vals = {
-            'partner_id' : self.partner_id.id,  
+            #'partner_id' : self.partner_id.id,  
             # 'freight_supplier_currency' : self.freight_supplier_currency,
             # 'exchange_rate' : self.supplier_client_exchange_rate,
             # 'design_engineering' : self.design_engineering, 
