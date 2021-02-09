@@ -74,8 +74,8 @@ class SaleOrder_Data(models.Model):
         # print("**************************************** ******************************************")
         # print(self.partner_id.id)
 
-        #view_ref = self.env['ir.model.data'].get_object_reference('sale', 'view_order_form')
-        #view_id = view_ref[1] if view_ref else False
+        view_ref = self.env['ir.model.data'].get_object_reference('sale', 'view_order_form')
+        view_id = view_ref[1] if view_ref else False
 
         new_salesorder = self.env['sale.order'].create(vals)
     
