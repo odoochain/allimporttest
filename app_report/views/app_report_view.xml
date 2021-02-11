@@ -12,6 +12,7 @@
                     <field name="payment_type"/> 
                     <field name="description_1"/>
                     <field name="dealer_discount"/> 
+                    <field name="check_it"/>
 
                 </field>
                 <button name="action_quotation_send" position="after">
