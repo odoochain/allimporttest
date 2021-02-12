@@ -1,5 +1,5 @@
 {
-    'name' : 'Tax Reports_chaNGED',
+    'name' : 'Tax Reports',
     'version': '1.3',
     'Summary': 'Tax Report Prints',
     'description': 'To print the new report',
