@@ -2,8 +2,8 @@
     'name' : 'Hospital Management',
     'version': '1.3',
     'Summary': 'to test how to create a module',
-    'sequence': '10',
-    'category': 'Extra Tools',
+    # 'sequence': '10',
+    # 'category': 'Extra Tools',
     'description': 'First module is created',
     'license': 'LGPL-3',
     'depends': [
