@@ -15,12 +15,12 @@
         </field>
      </record> -->
 
-     <record model="ir.actions.act_window" id="action_patient">
+     <!-- <record model="ir.actions.act_window" id="action_patient">
         <field name="name">A Test Action</field>
         <field name="res_model">hospital.patient</field>
         <field name="view_mode">form</field>
         <!-- <field name="view_id" ref="my_specific_view"/>  -->
-    </record>
+    </record> -->
 
 
     <menuitem id= "hospital_root" name="Hospital"/>
