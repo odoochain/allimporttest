@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <!-- action of the patient menu  -->
+    <record model="ir.actions.act_window.view" id="action_patient">
+        <field name="name">Patient</field>
+        <field name="view_mode">tree,form</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_type">form</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="help" type="html">
+            <P class ="o_view_nocontent_smiling_face">
+                create first Paitent!
+            </P>
+        </field>
+     </record>
+
+
     <menuitem id= "hospital_root" name="Hospital"/>
-    <menuitem id= "hospital_patient" name="Patient" parent = "hospital_root"/>
+    <menuitem id= "hospital_patient" name="Patient" parent = "hospital_root" actions="action_patient"/>
 
 </odoo>
