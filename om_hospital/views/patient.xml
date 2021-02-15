@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <menuitem id= "hospital_root" name="Hospital"/>
+    <menuitem id= "hospital_patient" name="Patient"/>
+
 </odoo>
