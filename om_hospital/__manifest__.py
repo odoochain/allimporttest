@@ -11,6 +11,7 @@
     ],    
     'data': [
        #all the path of XML files are present here
+       'views/patient.xml'
     ],
     'installable': True,
     'application':True,
