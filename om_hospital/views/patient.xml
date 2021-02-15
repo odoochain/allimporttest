@@ -3,11 +3,11 @@
 
     <!-- action of the patient menu  -->
     <record model="ir.actions.act_window" id="action_patient">
-        <field name="name">Patient</field>
-        <field name="view_mode">tree,form</field>
+        <field name="name">Patients</field>
+        <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.patient</field>
         <field name="view_type">form</field>
-        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <P class ="o_view_nocontent_smiling_face">
                 create first Paitent!
