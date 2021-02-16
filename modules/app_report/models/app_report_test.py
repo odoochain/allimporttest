@@ -4,8 +4,16 @@ from odoo import models, fields, api
 
 class SaleOrder_Data(models.Model):
     _inherit = 'sale.order'
+    #description = fields.Char(string='Description')
 
-    #channel_order_number = fields.Char(string = 'Channel Order No.')
+    channel_order_number = fields.Char(string = 'Channel Order No.')
+    payment_amount = fields.Char(string = 'Payment Amount')
+    
+
+
+
+
+
 
     def _prepare_invoice(self):
         
@@ -24,7 +32,7 @@ class SaleOrder_Data(models.Model):
             'source_id': self.source_id.id,
             'invoice_user_id': self.user_id and self.user_id.id,
             'team_id': self.team_id.id,
-            #'channel_order_number':self.channel_order_number,
+            'channel_order_number':self.channel_order_number,
             'partner_id': self.partner_invoice_id.id,
             'partner_shipping_id': self.partner_shipping_id.id,
             'fiscal_position_id': (self.fiscal_position_id or self.fiscal_position_id.get_fiscal_position(self.partner_invoice_id.id)).id,
@@ -71,13 +79,14 @@ class SaleOrder_Data(models.Model):
 class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
     seller_discount = fields.Float(string='Seller Discount')
+    
 
 class AccountMove_Data(models.Model):
     _inherit = 'account.move'
 
     # seller_discount = fields.Float(string = 'Seller Discount',readonly=True, tracking=True)
 
-    #channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
+    channel_order_number = fields.Char(string = 'Channel Order No.',readonly=True, tracking=True)
     #address_local_lang =  fields.Text(string = 'Address (Thai)', tracking=True,readonly=True)
     
     @api.depends('line_ids.price_unit', 'line_ids.seller_discount','line_ids.quantity')
@@ -131,3 +140,17 @@ class ResPartner_Data(models.Model):
 
     address_local_lang =  fields.Text(string = 'Address(Thai)')        
 
+
+#class Feedback(models.Model):
+#    _name = "feedback"
+#    name1 = fields.Integer(string="Subject")
+#    name2 = fields.Integer(string="Description")
+#    total = fields.Integer(string="total")
+#
+#    @api.multi
+#    @api.depends('name1','name2')
+#    def get_total(self):
+#        self.total = self.name1 + self.name2
+#        print"======self.total==========",self.total
+
+#Feedback()
